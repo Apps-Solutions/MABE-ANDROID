@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/hugo.figueroa/AndroidStudioProjects/MABE-ANDROID/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/hugo.figueroa/AndroidStudioProjects/MABE-ANDROID/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-06438e114ff5ad19c14f02386c748a5aa119e710.jar" />
+    </item>
+    <item
+        jar="/Users/hugo.figueroa/AndroidStudioProjects/MABE-ANDROID/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/hugo.figueroa/AndroidStudioProjects/MABE-ANDROID/app/build/intermediates/pre-dexed/debug/classes-02a3cadcd6b51f33ce58aaf5aa4dc1925f0ab490.jar" />
+    </item>
+    <item
+        jar="/Users/hugo.figueroa/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/hugo.figueroa/AndroidStudioProjects/Mabe-Android2/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-f836772d4559e86850f972d137e6e28709829e67.jar" />
+    </item>
+    <item
+        jar="/Users/hugo.figueroa/AndroidStudioProjects/Mabe-Android2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/hugo.figueroa/AndroidStudioProjects/Mabe-Android2/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-3cd2d6ea97a3044825f9cef8a826b8b84998035f.jar" />
+    </item>
+    <item
+        jar="/Users/hugo.figueroa/AndroidStudioProjects/MABE-ANDROID/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/hugo.figueroa/AndroidStudioProjects/MABE-ANDROID/app/build/intermediates/pre-dexed/debug/classes-6f90213e32526aa3e0bfb9cebab5378f4d212e98.jar" />
+    </item>
+    <item
+        jar="/Users/hugo.figueroa/AndroidStudioProjects/Mabe-Android2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/hugo.figueroa/AndroidStudioProjects/Mabe-Android2/app/build/intermediates/pre-dexed/debug/classes-cf16efe45006451027fa04597275ad11734e849f.jar" />
+    </item>
+    <item
+        jar="/Users/hugo.figueroa/AndroidStudioProjects/Mabe-Android2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/hugo.figueroa/AndroidStudioProjects/Mabe-Android2/app/build/intermediates/pre-dexed/debug/classes-561133de5ada9a0dead166847dd20a545605b905.jar" />
+    </item>
+
+</items>
