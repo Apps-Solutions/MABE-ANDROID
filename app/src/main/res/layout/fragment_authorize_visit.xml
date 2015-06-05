@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/coment_authorize_visit"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/sizeMediumText"/>
+        <EditText
+            android:id="@+id/edt_coment_authorize_visit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="4"
+            android:layout_margin="5dp"
+            android:gravity="top|left"
+            style="@style/EditTextCustomHolo"
+            android:hint="@string/write_a_coment"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:padding="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <FrameLayout
+            android:id="@+id/signature_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_general_edittext">
+            <TextView
+                android:id="@+id/txv_signature_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signature_hint"
+                android:textSize="@dimen/sizeLargeText"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"/>
+
+            <ImageView
+                android:id="@+id/img_signature"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+        </FrameLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

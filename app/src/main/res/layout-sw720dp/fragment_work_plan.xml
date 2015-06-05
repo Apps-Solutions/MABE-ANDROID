@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#d0d8d8">
+
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/expList__workplan"
+        android:background="#d0d8d8"
+        android:indicatorRight="40dp"
+        android:groupIndicator="@color/zxing_transparent"
+        android:childDivider="#627fa5"
+        android:layout_margin="2dp"
+        />
+
+</LinearLayout>

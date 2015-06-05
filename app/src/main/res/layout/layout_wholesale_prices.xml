@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/whp_title"
+            android:textColor="@color/wallet_holo_blue_light"
+            android:id="@+id/tv_whp_title"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/whp_add"
+            android:layout_weight="5"
+            android:src="@drawable/ic_add_enabled"
+            android:background="@color/zxing_transparent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/wallet_holo_blue_light"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/whp_brand"
+            android:id="@+id/tv_whp_brand"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_gray" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sp_whp_brand"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/whp_product"
+            android:id="@+id/tv_whp_product"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_gray" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sp_whp_product"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/whp_price"
+            android:id="@+id/tv_whp_price"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_whp_price"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number|numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/whp_chief_comment"
+            android:id="@+id/tv_whp_chief_comment"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_whp_chief_comment"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/whp_chief_signature"
+            android:id="@+id/tv_whp_chief_signature"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_whp_chief_signature"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="text|number" />
+    </LinearLayout>
+
+</LinearLayout>

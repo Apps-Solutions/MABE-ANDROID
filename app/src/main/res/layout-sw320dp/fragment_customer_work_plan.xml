@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="match_parent"
+        android:background      ="@color/sic_indig"
+        >
+
+        <TableRow
+            android:layout_height       ="wrap_content"
+            android:layout_width        ="match_parent"
+            android:layout_marginTop    ="10dp"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginRight  ="10dp">
+
+            <TextView
+                android:layout_weight   ="0"
+                android:textColor       ="@color/black_gray"
+                android:textStyle       ="bold"
+                android:text            ="@string/wp_customer"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+            <TextView
+                android:id              ="@+id/txt_pdv_name"
+                android:layout_weight   ="1"
+                android:textColor       ="@color/light_gray"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height       ="wrap_content"
+            android:layout_width        ="match_parent"
+            android:layout_marginTop    ="10dp"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginRight  ="10dp">
+
+            <TextView
+                android:layout_weight   ="0"
+                android:textColor       ="@color/black_gray"
+                android:textStyle       ="bold"
+                android:text            ="@string/wp_jde_code"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+            <TextView
+                android:id              ="@+id/txt_pdv_jde"
+                android:layout_weight   ="1"
+                android:textColor       ="@color/light_gray"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height       ="wrap_content"
+            android:layout_width        ="match_parent"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginRight  ="10dp"
+            android:layout_marginTop    ="5dp">
+
+            <TextView
+                android:id              ="@+id/tv_address"
+                android:layout_weight   ="0"
+                android:textColor       ="@color/black_gray"
+                android:textStyle       ="bold"
+                android:text            ="@string/wp_address"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+            <TextView
+                android:id              ="@+id/txt_pdv_address"
+                android:layout_weight   ="1"
+                android:textColor       ="@color/light_gray"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height       ="wrap_content"
+            android:layout_width        ="match_parent"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginRight  ="10dp"
+            android:layout_marginTop    ="5dp">
+
+            <TextView
+                android:id              ="@+id/tv_telephone"
+                android:layout_weight   ="0"
+                android:textColor       ="@color/black_gray"
+                android:textStyle       ="bold"
+                android:text            ="@string/wp_telephone"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+            <TextView
+                android:id              ="@+id/txt_pdv_phone_number"
+                android:layout_weight   ="1"
+                android:textColor       ="@color/light_gray"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+
+        </TableRow>
+
+        <RelativeLayout
+            android:layout_height   ="match_parent"
+            android:layout_width    ="match_parent">
+
+            <FrameLayout
+                android:id                  ="@+id/mapview"
+                android:name                ="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginBottom ="5dp"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_above        ="@+id/tableRow"/>
+
+            <TableRow
+                android:layout_height               ="wrap_content"
+                android:layout_width                ="fill_parent"
+                android:gravity                     ="center"
+                android:stretchColumns              ="2"
+                android:layout_alignParentBottom    ="true"
+                android:layout_alignParentLeft      ="true"
+                android:layout_alignParentStart     ="true"
+                android:layout_marginLeft           ="8dp"
+                android:layout_marginBottom         ="8dp"
+                android:layout_marginRight          ="8dp"
+                android:id                          ="@+id/tableRow">
+
+
+                <Button
+                    android:id              ="@+id/workP_buttonIniciar"
+                    android:layout_width    ="fill_parent"
+                    android:layout_height   ="wrap_content"
+                    android:layout_gravity  ="center"
+                    android:layout_weight   ="1"
+                    android:text            ="@string/wp_start"
+                    android:background      ="@color/black_gray"
+                    android:textColor       ="@color/sic_indig"
+                     />
+
+                <Button
+                    android:layout_width    ="fill_parent"
+                    android:layout_height   ="wrap_content"
+                    android:layout_weight   ="1"
+                    android:text            ="@string/wp_reassign"
+                    android:background      ="@color/black_gray"
+                    android:textColor       ="@color/sic_indig"
+                    android:id              ="@+id/workP_buttonReagendar" />
+            </TableRow>
+        </RelativeLayout>
+
+    </TableLayout>
+</LinearLayout>

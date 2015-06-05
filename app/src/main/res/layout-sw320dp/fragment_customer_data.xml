@@ -1,0 +1,484 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:background="@color/list_item_background_solid"
+    tools:context="com.sellcom.tracker.FragmentCustomerData">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:weightSum="100"
+        android:background="@color/customer_data_background"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="top"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/ic_punto_rojo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:weightSum="100"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:text="@string/customer_name"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:text="@string/customer_address"
+                android:gravity="center_vertical|top"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_color"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_CustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:text="COPAG, S.A. DE C.V. "
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_CustomerAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:text="LÁZARO CÁRDENAS No. 2305 INT. F7 Y F8 COL. LAS TORRES"
+                    android:gravity="center_vertical|top"
+                    android:textSize="@dimen/customer_dimens_320sp"
+                    android:textColor="@color/app_color"/>
+                <ImageView
+                    android:id="@+id/imgv_CustomerData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_icono_folder"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/fragment_background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/ic_punto_rojo"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:weightSum="90"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="@string/customer_credit"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textStyle="bold"
+                android:textColor="@color/app_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="50"
+                    android:weightSum="70">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="@string/customer_order"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="@string/customer_bill"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="@string/customer_quantity"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="@string/customer_cashing"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="@string/customer_payment_reception"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="@string/customer_payment_type"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="@string/customer_status"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="50"
+                    android:weightSum="70">
+
+                    <TextView
+                        android:id="@+id/txt_CustomerOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="1001"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:id="@+id/txt_CustomerBill"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="RAG01"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:id="@+id/txt_CustomerQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="24"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:id="@+id/txt_CustomerCollect"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:id="@+id/txt_CustomerPaymentReception"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:id="@+id/txt_CustomerPaymentType"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                    <TextView
+                        android:id="@+id/txt_CustomerStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:text="Al corriente"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/customer_dimens_320sp"
+                        android:textColor="@color/app_color"/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_CustomerData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_button_payment_record"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="@color/red"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/list_item_background_solid"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/ic_punto_rojo"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:weightSum="65"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:text="@string/customer_statistical_previous_sale"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="@string/customer_previous_order"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="@string/customer_product"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="@string/customer_quantity"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="@string/customer_type_costumer"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="@string/customer_market_actions"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:weightSum="65"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"/>
+
+            <TextView
+                android:id="@+id/txt_CustomerPreviousOrder"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:id="@+id/txt_CustomerProduct"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="NUTRIOLO 946"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:id="@+id/txt_CustomerPreviousQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="12"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:id="@+id/txt_CustomerTypeCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+            <TextView
+                android:id="@+id/txt_CustomerMarketActions"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textSize="@dimen/customer_dimens_320sp"
+                android:textColor="@color/app_color"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,8 +1,47 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat">
         <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:radioButtonStyle">@style/RadioButton</item>
+        <item name="android:editTextStyle">@style/EditTextCustomHolo</item>
+    </style>
+
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/app_color</item>
+    </style>
+
+    <style name="EditTextCustomHolo" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="android:textColor">@color/black_gray</item>
+    </style>
+
+    <style name="DialogAnimations">
+        <item name="android:windowEnterAnimation">@anim/dialog_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/dialog_to_bottom</item>
+    </style>
+
+    <style name="AnimatedDialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimations</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:background">@drawable/apptheme_spinner_default_holo_light</item>
+    </style>
+
+    <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radio_style</item>
+    </style>
+
+
+    <!-- custom animated from dialog -->
+    <style name="AnimatedFragmentDialog" />
+    <style name="AnimatedFragmentDialog.prueba">
+        <item name="@android:windowEnterAnimation">@anim/dialog_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_to_bottom</item>
     </style>
 
 </resources>

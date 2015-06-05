@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@color/sic_indig">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id                  ="@+id/lbl_product_name"
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeMediumText"
+                android:text                ="@string/cp_product"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/qi_problem_type"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/mySpinnerItemStyle"
+                android:id="@+id/spn_problem_type"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/qi_description"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <EditText
+                android:id              ="@+id/edt_description_problem"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:textColor       ="@color/black_gray"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/qi_batch"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:calendarViewShown="false"
+                android:id="@+id/datePicker_quality_incidences" />
+            <!--
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@color/gray"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:id="@+id/numberPicker1" />
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@color/gray"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:id="@+id/numberPicker2" />
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@color/gray"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:id="@+id/numberPicker3" />
+            -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/qi_line"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:background="@android:drawable/btn_dropdown"
+                android:entries="@array/sp_line"
+                android:id="@+id/spn_line"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/qi_bottles_problem"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <EditText
+                android:id              ="@+id/edt_bottles_problem"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:textColor       ="@color/black_gray"
+                android:inputType       ="number"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="100"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_weight="70"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:text="@string/evidence"
+                android:textColor="@color/black_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:weightSum="100"
+                android:background="@color/black_gray"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/imgCamera_quality_incidences"
+                    android:layout_width="@dimen/size_photo"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_camara"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:textSize="@dimen/text_camera"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center|top"
+                    android:text="@string/text_camera"/>
+                <ImageView
+                    android:id="@+id/imgPhoto_quality_incidences"
+                    android:layout_width="@dimen/size_photo"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

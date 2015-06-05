@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="My Label"
+        android:textColor="#fff"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="left"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginTop="450dp" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:maxLength="200"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Cancel"
+        android:textColor="#fff"
+        android:gravity="right"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="450dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id              ="@+id/fragmentLiquidation"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:background      ="@color/white"
+    android:padding         ="10dp"
+    tools:context           ="com.sellcom.tracker.FragmentPartialPay">
+
+
+    <LinearLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="match_parent"
+        android:gravity         ="center_horizontal"
+        android:weightSum       ="100"
+        android:orientation     ="vertical">
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="0dp"
+            android:layout_weight   ="15"
+            android:layout_marginBottom="10dp"
+            android:orientation     ="vertical"
+            android:gravity="center"
+            android:weightSum       ="100">
+
+            <EditText
+                android:id                  ="@+id/edtMovementNumber"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:layout_marginLeft   ="20dp"
+                android:layout_marginRight  ="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize            ="@dimen/text_size"
+                android:hint                ="@string/movement_number"
+                android:textColorHint       ="@color/light_gray"
+                android:inputType           ="number"
+                android:gravity             ="center"
+                android:textColor           ="@color/black_gray"
+                android:maxLines            ="1"
+                android:singleLine          ="true"
+                style="@style/EditTextCustomHolo"
+                android:nextFocusDown       ="@+id/edtQuantity"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="0dp"
+            android:layout_weight   ="15"
+            android:orientation     ="vertical"
+            android:gravity="center"
+            android:weightSum       ="100">
+
+            <EditText
+                android:id                  ="@+id/edtQuantity"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:layout_marginLeft   ="20dp"
+                android:layout_marginRight  ="20dp"
+                android:textSize            ="@dimen/text_size"
+                android:hint                ="@string/quantity"
+                android:textColorHint       ="@color/light_gray"
+                android:inputType           ="numberDecimal"
+                android:gravity             ="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor           ="@color/black_gray"
+                android:maxLines            ="1"
+                android:singleLine          ="true"
+                style="@style/EditTextCustomHolo"
+                android:imeOptions          ="actionDone"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="0dp"
+            android:weightSum       ="100"
+            android:layout_margin   ="20dp"
+            android:gravity         ="center"
+            android:layout_weight   ="70"
+            android:orientation     ="vertical">
+
+            <TextView
+                android:layout_width    ="match_parent"
+                android:layout_height   ="0dp"
+                android:layout_weight   ="20"
+                android:gravity         ="center_vertical|center_horizontal"
+                android:textSize        ="@dimen/text_size"
+                android:text            ="@string/evidence"
+                android:textColor       ="@color/black_gray"/>
+           <LinearLayout
+                android:layout_width    ="match_parent"
+                android:layout_height   ="0dp"
+                android:layout_weight   ="80"
+                android:weightSum       ="100"
+                android:background      ="@color/black_gray"
+                android:orientation     ="vertical">
+
+                <ImageView
+                    android:id              ="@+id/imgCamera"
+                    android:layout_width    ="@dimen/size_photo"
+                    android:layout_height   ="0dp"
+                    android:layout_weight   ="40"
+                    android:layout_gravity  ="center"
+                    android:src             ="@drawable/ic_camara"
+                    android:scaleType       ="fitCenter"/>
+
+                <TextView
+                    android:layout_width    ="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:textSize="@dimen/text_camera"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center|top"
+                    android:text="@string/text_camera"/>
+                <ImageView
+                    android:id="@+id/imgPhoto"
+                    android:layout_width="@dimen/size_photo"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

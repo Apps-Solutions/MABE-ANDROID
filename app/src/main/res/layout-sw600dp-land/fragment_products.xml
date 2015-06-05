@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:id="@+id/listProd"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:gravity="center">
+
+            <SearchView
+                android:id="@+id/search_product"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:background="#627f95"
+                android:iconifiedByDefault="false"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:queryHint="@string/product_search_hint"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bar_code"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_transparent_background_square"
+                android:id="@+id/scanButton"/>
+
+        </LinearLayout>
+
+        <de.timroes.android.listview.EnhancedListView
+            android:id="@+id/products_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#d0d8d8"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/product_content"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"/>
+
+   </LinearLayout>
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color">#00b259</color>
+    <color name="customer_data_background">#dAd8d8</color>
+    <color name="fragment_background">#d0d8d8</color>
+    <color name="list_item_background_solid">#adbcc2</color>
+    <color name="color_text_cashing">#000000</color>
+    <color name="red">#ed1c24</color>
+    <color name="white">#F2F2F2</color>
+    <color name="dark_gray">#425767</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="light_green">#56b49f</color>
+
+    <color name="sic_green">#6bc04b</color>
+    <color name="sic_green_soft">#bcdaa7</color>
+    <color name="sic_blue">#00a6b6</color>
+    <color name="sic_blue_soft">#98d0d7</color>
+    <color name="sic_indig">#F2F2F2</color>
+    <color name="sic_indig_soft">#00b259</color>
+    <color name="sic_indig_soft_semi_trans">#668a949e</color>
+
+    <color name="primaryColor">#8a949e</color>
+    <color name="primaryDarkColor">#253746</color>
+    <color name="accentColor">#00a6b6</color>
+    <color name="textColorPrimary">#253746</color>
+    <color name="drawerBackground">#fafafa</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="textPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
+
+    <color name="black_gray">#5F6062</color>
+    <color name="light_gray">#939598</color>
+    <color name="black">#000000</color>
+
+    <color name="azul1">#009cc0</color>
+    <color name="azul2">#00707c</color>
+
+
+
+</resources>

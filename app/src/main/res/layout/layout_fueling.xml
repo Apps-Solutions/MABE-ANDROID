@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/fuel_title"
+        android:textColor="@color/wallet_holo_blue_light"
+        android:id="@+id/tv_fuel_title"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/wallet_holo_blue_light"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fuel_type"
+            android:id="@+id/tv_fuel_type"
+            android:layout_weight="1.4"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_gray" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sp_fuel_type"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fuel_place"
+            android:id="@+id/tv_fuel_place"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_fuel_place"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="text"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fuel_km_actual"
+            android:id="@+id/tv_fuel_km_actual"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_fuel_km_actual"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fuel_liters"
+            android:id="@+id/tv_fuel_liters"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_fuel_liters"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fuel_amount"
+            android:id="@+id/tv_fuel_amount"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_fuel_amount"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fuel_ticket_bill"
+            android:id="@+id/tv_fuel_ticket_bill"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="1.5"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_fuel_ticket_bill"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fuel_observations"
+            android:id="@+id/tv_fuel_observations"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_fuel_observations"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="text"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fuel_capture_evidence"
+            android:id="@+id/bt_fuel_capture"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fuel_save_expense"
+            android:id="@+id/bt_fuel_save"
+            android:layout_gravity="right"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

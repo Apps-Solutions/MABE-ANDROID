@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sic_indig">
+
+    <ListView
+        android:id="@+id/lv_extra_tasks"
+        android:layout_width="match_parent"
+        android:divider="@color/light_gray"
+        android:layout_height="match_parent"/>
+
+
+
+
+</LinearLayout>

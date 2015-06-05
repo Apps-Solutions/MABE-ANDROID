@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d0d8d8">
+
+    <TextView
+        android:id="@+id/title_evidence"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/evidence_title"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner_evidence"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/continue_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="right"
+        android:layout_marginRight="16dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="@string/button_continue"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/evidence_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/grid_evidence_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </GridView>
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="#c3cfce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/cashing_preview_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/cashing_previewTop_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#90a6b0"
+                    android:padding="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txv_receipt_cashing_fact"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#FFF"
+                        android:textSize="40dp"
+                        android:text="@string/receipt_number"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.25dp"
+                    android:background="@color/app_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:paddingBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/app_color"
+                        android:textStyle="bold"
+                        android:text="@string/receipt_header_list_quantity"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2.5"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/app_color"
+                        android:textStyle="bold"
+                        android:text="@string/receipt_header_list_description"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/app_color"
+                        android:textStyle="bold"
+                        android:text="@string/receipt_header_list_price"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/app_color"
+                        android:textStyle="bold"
+                        android:text="@string/receipt_header_list_amount"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/factura_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="@color/app_color"/>
+
+            <LinearLayout
+                android:id="@+id/receipt_footer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/app_color"
+                        android:text="@string/receipt_subtotal"/>
+
+                    <TextView
+                        android:id="@+id/receipt_subtotal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/activity_vertical_margin"
+                        android:textColor="@color/app_color"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/app_color"
+                        android:text="@string/receipt_taxes"/>
+
+                    <TextView
+                        android:id="@+id/receipt_tax"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/activity_vertical_margin"
+                        android:textColor="@color/app_color"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textColor="@color/app_color"
+                        android:text="@string/receipt_total"/>
+
+                    <TextView
+                        android:id="@+id/receipt_total"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/activity_vertical_margin"
+                        android:textStyle="bold"
+                        android:textColor="@color/app_color"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/app_color"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarStyle"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cashing_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/cancel"
+                android:textColor="@color/app_color"/>
+
+            <Button
+                android:id="@+id/btn_cashing_print"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/print"
+                android:textColor="@color/app_color"/>
+
+            <Button
+                android:id="@+id/btn_cashing_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/ok"
+                android:textColor="@color/app_color"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+

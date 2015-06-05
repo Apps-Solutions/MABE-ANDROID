@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ci_title"
+            android:textColor="@color/wallet_holo_blue_light"
+            android:id="@+id/tv_ci_title"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ci_add"
+            android:layout_weight="5"
+            android:src="@drawable/ic_add_enabled"
+            android:background="@color/zxing_transparent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/wallet_holo_blue_light"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/whp_brand"
+            android:id="@+id/tv_whp_brand"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_gray" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sp_whp_brand"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ci_code"
+            android:id="@+id/tv_ci_code"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="12"
+            android:id="@+id/tv_ci_code_value"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ci_quantity"
+            android:id="@+id/tv_ci_quantity"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_ci_quantity"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ci_unitm"
+        android:id="@+id/tv_ci_unitm"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/dark_gray"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:padding="10dp">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ci_unitm_boxes"
+            android:id="@+id/bt_ci_boxes"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textColor="@color/dark_gray"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ci_unitm_bottles"
+            android:id="@+id/bt_ci_bottles"
+            android:layout_weight="1"
+            android:textColor="@color/dark_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ci_sale_made"
+            android:id="@+id/tv_sale_made"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="12"
+            android:id="@+id/tv_ci_sale_made"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal|center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ci_suggested_order"
+            android:id="@+id/tv_ci_suggested_order"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_ci_suggested_order"
+            android:autoText="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/table_ci">
+
+            <TableRow
+                android:id="@+id/tableR_ci_head"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_ci_productT"
+                    android:text="@string/ci_productT"
+                    android:background="@drawable/border_table_head"
+                    android:textColor="#000000"
+                    android:padding="15dip"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10" />
+
+                <TextView
+                    android:id="@+id/tv_ci_quantityT"
+                    android:text="@string/ci_quantityT"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_table_head"
+                    android:textColor="#000000"
+                    android:padding="15dip"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_ci_unitmT"
+                    android:text="@string/ci_unitmT"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_table_head"
+                    android:textColor="#000000"
+                    android:padding="15dip"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_ci_actionT"
+                    android:text="@string/ci_actionT"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_table_head"
+                    android:textColor="#000000"
+                    android:padding="15dip"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableR_ci_body"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_ci_productTB"
+                    android:text="Nutrioli 473"
+                    android:layout_weight="10"
+                    android:background="@drawable/border_table_body"
+                    android:textColor="#000000"
+                    android:padding="15dip"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_ci_quantityTB"
+                    android:text="12"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_table_body"
+                    android:textColor="#000000"
+                    android:padding="15dip"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_ci_unitmTB"
+                    android:text="Bot"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_table_body"
+                    android:textColor="#000000"
+                    android:padding="15dip"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_ci_actionTB"
+                    android:text="Edit"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_table_body"
+                    android:textColor="#000000"
+                    android:padding="15dip"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

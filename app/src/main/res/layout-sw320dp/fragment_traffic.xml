@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_general_edittext">
+
+    <LinearLayout
+        android:id="@+id/button_show_traffic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@drawable/button_transparent_background_square">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/h_loc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/sizeLargeText"
+            android:layout_gravity="center"
+            android:text="@string/see_traffic"/>
+
+    </LinearLayout>
+</FrameLayout>

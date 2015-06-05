@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/sic_indig">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="left|center"
+            android:weightSum       ="100"
+            android:orientation     ="vertical">
+            />
+
+            <TextView
+                android:id                  ="@+id/tv_inv_client_name"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:layout_weight       ="70"
+                android:layout_marginBottom ="10dp"
+                android:gravity             ="center_horizontal"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="SORIANA SUC. 54 SAN AGUSTIN"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="center"
+            android:layout_marginBottom ="10dp"
+            android:orientation         ="horizontal">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="@string/inv_product"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+            <Spinner
+                android:id              ="@+id/sp_inv_product"
+                android:layout_width    ="match_parent"
+                android:background="@color/light_gray"
+                android:layout_height   ="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width            ="match_parent"
+            android:layout_height           ="wrap_content"
+            android:gravity                 ="left|center"
+            android:layout_marginBottom     ="10dp"
+            android:orientation             ="vertical">
+
+            <LinearLayout
+                android:layout_width            ="match_parent"
+                android:layout_height           ="match_parent"
+                android:layout_weight           ="30"
+                android:layout_marginBottom     ="10dp"
+                android:weightSum               ="100"
+                android:orientation             ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="match_parent"
+                    android:layout_weight       ="90"
+                    android:gravity             ="bottom"
+                    android:text                ="@string/inv_products"
+                    android:textStyle           ="bold"
+                    android:layout_marginBottom ="2dp"
+                    android:textSize            ="@dimen/sizeMediumText"
+                    android:textColor           ="@color/black_gray"/>
+
+                <ImageButton
+                    android:id                  ="@+id/btn_inv_add_product"
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="wrap_content"
+                    android:layout_weight       ="10"
+                    android:layout_marginRight  ="10dp"
+                    android:src                 ="@drawable/ic_add_enabled"
+                    android:background          ="@drawable/ic_add_enabled"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width    ="match_parent"
+                android:layout_height   ="2dp"
+                android:background      ="@color/light_gray"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id              ="@+id/lst_inv_products_added"
+            android:layout_width    ="match_parent"
+            android:divider="@color/light_gray"
+            android:layout_height   ="match_parent">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

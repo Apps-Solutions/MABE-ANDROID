@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp">
+
+    <LinearLayout
+        android:id="@+id/aux_dummy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <LinearLayout
+        android:id="@+id/contenedor_buscador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/search_product_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:background="#7B91A7"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:drawablePadding="5dp"
+            android:padding="3dp"
+            android:hint="@string/product_search_hint"
+            android:textColorHint="#AAFFFFFF"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/scanButton"
+            android:src="@drawable/bar_code"
+            android:background="@drawable/button_transparent_background_square"/>
+
+    </LinearLayout>
+
+    <de.timroes.android.listview.EnhancedListView
+        android:id="@+id/products_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#d0d8d8"
+        android:layout_below="@+id/contenedor_buscador"
+        android:descendantFocusability="afterDescendants"/>
+
+    <ListView
+        android:id="@+id/product_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="#a5b4bf"
+        android:divider="@null"
+        android:dividerHeight="2dp"
+        android:layout_below="@+id/contenedor_buscador"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"/>
+
+</RelativeLayout>

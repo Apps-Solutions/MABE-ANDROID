@@ -1,0 +1,291 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentLiquidation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.sellcom.tracker.FragmentFueling">
+
+    <ScrollView
+        android:layout_width    ="match_parent"
+        android:layout_height   ="match_parent">
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="center_horizontal"
+            android:weightSum       ="100"
+            android:orientation     ="vertical">
+
+            <LinearLayout
+                android:orientation     ="horizontal"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:layout_gravity  ="center_horizontal"
+                android:paddingLeft     ="10dp"
+                android:paddingRight    ="10dp">
+
+                <TextView
+                    android:id              ="@+id/txt_fuel_type"
+                    android:layout_width    ="wrap_content"
+                    android:layout_height   ="match_parent"
+                    android:text            ="@string/fuel_type"
+                    android:gravity         ="center_vertical"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/black_gray" />
+
+                <Spinner
+                    android:id              ="@+id/spn_fuel_type"
+                    android:layout_width    ="fill_parent"
+                    android:layout_height   ="match_parent"
+                    android:layout_weight   ="1"
+                    android:spinnerMode     ="dropdown"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:entries         ="@array/fuel_type"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:orientation     ="vertical"
+                android:weightSum       ="100">
+
+                <LinearLayout
+                    android:orientation     ="horizontal"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:layout_gravity  ="center_horizontal"
+                    android:gravity         ="fill_horizontal|center_horizontal"
+                    android:paddingLeft     ="10dp"
+                    android:paddingRight    ="10dp">
+
+                    <TextView
+                        android:layout_width    ="wrap_content"
+                        android:layout_height   ="wrap_content"
+                        android:text            ="@string/fuel_place"
+                        android:id              ="@+id/tv_fuel_place"
+                        android:layout_gravity  ="center_vertical"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black_gray"/>
+
+                    <EditText
+                        android:id              ="@+id/edt_fuel_place"
+                        android:layout_width    ="match_parent"
+                        android:layout_height   ="wrap_content"
+                        android:autoText        ="true"
+                        android:gravity         ="center_vertical|center_horizontal"
+                        android:inputType       ="text"
+                        android:textColor="@color/black_gray"
+                        style="@style/EditTextCustomHolo"
+                        android:layout_weight   ="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation         ="horizontal"
+                    android:layout_width        ="match_parent"
+                    android:layout_height       ="wrap_content"
+                    android:layout_gravity      ="center_horizontal"
+                    android:gravity             ="fill_horizontal|center_horizontal"
+                    android:paddingLeft         ="10dp"
+                    android:paddingRight        ="10dp">
+
+                    <TextView
+                        android:id              ="@+id/tv_fuel_km_actual"
+                        android:layout_width    ="wrap_content"
+                        android:layout_height   ="wrap_content"
+                        android:text            ="@string/fuel_km_actual"
+                        android:layout_gravity  ="center_vertical"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"/>
+
+                    <EditText
+                        android:id              ="@+id/edt_fuel_km_actual"
+                        android:layout_width    ="match_parent"
+                        android:layout_height   ="wrap_content"
+                        android:autoText        ="true"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"
+                        android:gravity         ="center_vertical|center_horizontal"
+                        android:inputType       ="numberDecimal"
+                        style="@style/EditTextCustomHolo"
+                        android:layout_weight   ="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation     ="horizontal"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:layout_gravity  ="center_horizontal"
+                    android:gravity         ="fill_horizontal|center_horizontal"
+                    android:paddingLeft     ="10dp"
+                    android:paddingRight    ="10dp">
+
+                    <TextView
+                        android:id              ="@+id/txt_fuel_liters"
+                        android:layout_width    ="wrap_content"
+                        android:layout_height   ="wrap_content"
+                        android:text            ="@string/fuel_liters"
+                        android:layout_gravity  ="center_vertical"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"/>
+
+                    <EditText
+                        android:id              ="@+id/edt_fuel_liters"
+                        android:layout_width    ="match_parent"
+                        android:layout_height   ="wrap_content"
+                        android:autoText        ="true"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"
+                        android:gravity         ="center_vertical|center_horizontal"
+                        android:inputType       ="numberDecimal"
+                        style="@style/EditTextCustomHolo"
+                        android:layout_weight   ="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation     ="horizontal"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:layout_gravity  ="center_horizontal"
+                    android:gravity         ="fill_horizontal|center_horizontal"
+                    android:paddingLeft     ="10dp"
+                    android:paddingRight    ="10dp">
+
+                    <TextView
+                        android:id              ="@+id/tv_fuel_amount"
+                        android:layout_width    ="wrap_content"
+                        android:layout_height   ="wrap_content"
+                        android:text            ="@string/fuel_amount"
+                        android:layout_gravity  ="center_vertical"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"/>
+
+                    <EditText
+                        android:id              ="@+id/edt_fuel_amount"
+                        android:layout_width    ="match_parent"
+                        android:layout_height   ="wrap_content"
+                        android:autoText        ="true"
+                        android:gravity         ="center_vertical|center_horizontal"
+                        android:inputType       ="numberDecimal"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"
+                        style="@style/EditTextCustomHolo"
+                        android:layout_weight   ="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation     ="horizontal"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:layout_gravity  ="center_horizontal"
+                    android:gravity         ="fill_horizontal|center_horizontal"
+                    android:paddingLeft     ="10dp"
+                    android:paddingRight    ="10dp">
+
+                    <TextView
+                        android:id              ="@+id/txt_fuel_ticket_bill"
+                        android:layout_width    ="wrap_content"
+                        android:layout_height   ="wrap_content"
+                        android:text            ="@string/fuel_ticket_bill"
+                        android:layout_gravity  ="center_vertical"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"/>
+                    <EditText
+                        android:id              ="@+id/edt_fuel_ticket_bill"
+                        android:layout_width    ="match_parent"
+                        android:layout_height   ="wrap_content"
+                        android:autoText        ="true"
+                        android:gravity         ="center_vertical|center_horizontal"
+                        android:layout_weight   ="1"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"
+                        style="@style/EditTextCustomHolo"
+                        android:inputType       ="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation     ="vertical"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:layout_gravity  ="center_horizontal"
+                    android:gravity         ="fill_horizontal|center_horizontal"
+                    android:paddingLeft     ="10dp"
+                    android:paddingRight    ="10dp">
+
+                    <TextView
+                        android:id              ="@+id/txt_fuel_observations"
+                        android:layout_width    ="wrap_content"
+                        android:layout_height   ="wrap_content"
+                        android:text            ="@string/fuel_observations"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"
+                        android:layout_gravity  ="center_vertical"/>
+
+                    <EditText
+                        android:id              ="@+id/edt_fuel_observations"
+                        android:layout_width    ="match_parent"
+                        android:layout_height   ="wrap_content"
+                        android:autoText        ="true"
+                        android:gravity         ="center_vertical|center_horizontal"
+                        android:inputType       ="text"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"
+                        style="@style/EditTextCustomHolo"
+                        android:layout_weight   ="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width    ="match_parent"
+                android:layout_height   ="0dp"
+                android:weightSum       ="100"
+                android:layout_margin   ="20dp"
+                android:gravity         ="center"
+                android:layout_weight   ="70"
+                android:orientation     ="vertical">
+
+                <TextView
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="0dp"
+                    android:layout_weight   ="20"
+                    android:gravity         ="center_vertical"
+                    android:textSize        ="@dimen/text_size"
+                    android:text            ="@string/evidence"
+                    android:textColor       ="@color/black_gray"/>
+                <LinearLayout
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="0dp"
+                    android:layout_weight   ="80"
+                    android:weightSum       ="100"
+                    android:background      ="@color/black_gray"
+                    android:orientation     ="vertical">
+
+                    <ImageView
+                        android:id              ="@+id/imgCamera"
+                        android:layout_width    ="@dimen/size_photo"
+                        android:layout_height   ="0dp"
+                        android:layout_weight   ="40"
+                        android:layout_gravity  ="center"
+                        android:src             ="@drawable/ic_camara"
+                        android:scaleType       ="fitCenter"/>
+
+                    <TextView
+                        android:layout_width    ="wrap_content"
+                        android:layout_height   ="0dp"
+                        android:layout_weight   ="20"
+                        android:textSize        ="@dimen/text_camera"
+                        android:textColor       ="@color/white"
+                        android:layout_gravity  ="center"
+                        android:gravity         ="center|top"
+                        android:text            ="@string/text_camera"/>
+                    <ImageView
+                        android:id              ="@+id/imgPhoto"
+                        android:layout_width    ="@dimen/size_photo"
+                        android:layout_height   ="0dp"
+                        android:layout_weight   ="40"
+                        android:scaleType       ="fitCenter"
+                        android:layout_gravity  ="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

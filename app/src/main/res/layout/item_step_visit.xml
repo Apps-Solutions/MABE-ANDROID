@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id              ="@+id/relative"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:background      ="#4c6e85"
+    android:gravity         ="center">
+
+    <LinearLayout
+        android:id              ="@+id/linearlayout1"
+        android:orientation     ="vertical"
+        android:layout_width    ="match_parent"
+        android:layout_height   ="@dimen/dimen_item_step_visit"
+        android:gravity         ="center">
+
+        <ImageView
+            android:id                  ="@+id/image_step_visit"
+            android:layout_width        ="wrap_content"
+            android:layout_height       ="wrap_content"
+            android:layout_margin       ="10dp"
+            android:layout_alignBottom  ="@+id/name_step_visit"/>
+
+        <TextView
+            android:id              ="@+id/name_step_visit"
+            android:layout_width    ="wrap_content"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="center"
+            android:textSize        ="@dimen/dimen_text_step_visit"
+            android:textStyle       ="bold"
+            android:textColor       ="@color/white"/>
+
+    </LinearLayout>
+</FrameLayout>

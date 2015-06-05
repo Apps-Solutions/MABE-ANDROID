@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/client"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="15"
+                    android:layout_height="wrap_content"
+                    android:maxLength="5"
+                    android:textColor="@color/black_gray"
+                    android:textStyle="bold"
+                    android:text="@string/client_type_lbl"/>
+
+                <Spinner
+                    android:id="@+id/spn_client_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:prompt="@string/client_type_lbl"
+                    android:spinnerMode="dropdown"
+
+                    android:background="@android:drawable/btn_dropdown"
+                    android:entries="@array/client_type"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_client_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/client_name_hint"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                style="@style/EditTextCustomHolo"
+                android:inputType="textCapCharacters"/>
+
+            <EditText
+                android:id="@+id/edt_client_last_name_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/client_last_name1_hint"
+                android:inputType="textCapCharacters"
+                android:textColorHint="@color/light_gray"
+                style="@style/EditTextCustomHolo"
+                android:textColor="@color/black_gray"
+
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/edt_client_last_name_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/client_last_name2_hint"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                android:inputType="textCapCharacters"
+                style="@style/EditTextCustomHolo"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/edt_client_rfc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/client_rfc_hint"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                android:inputType="textCapCharacters"
+                android:singleLine="true"
+                style="@style/EditTextCustomHolo"
+                android:nextFocusDown="@+id/edt_client_curp"/>
+
+            <EditText
+                android:id="@+id/edt_client_curp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/client_curp_hint"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                android:inputType="textCapCharacters"
+                android:singleLine="true"
+                style="@style/EditTextCustomHolo"
+                android:nextFocusDown="@+id/edt_client_phone"/>
+
+            <EditText
+                android:id              ="@+id/edt_client_phone"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="phone"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                android:hint            ="@string/client_phone_hint"
+                android:singleLine      ="true"
+                style="@style/EditTextCustomHolo"
+                android:nextFocusDown   ="@+id/edt_client_email"/>
+
+            <EditText
+                android:id              ="@+id/edt_client_email"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                android:inputType       ="textEmailAddress"
+                android:hint            ="@string/client_email_hint"
+                style="@style/EditTextCustomHolo"
+                android:nextFocusDown   ="@+id/edt_client_locality"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_client_latitude"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/client_latitude_hint"
+                    android:textColorHint="@color/light_gray"
+                    android:textColor="@color/black_gray"
+                    android:enabled="false"
+                    style="@style/EditTextCustomHolo"
+                    android:nextFocusDown="@+id/edt_client_longitude"/>
+
+                <EditText
+                    android:id="@+id/edt_client_longitude"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/client_longitude_hint"
+                    android:textColorHint="@color/light_gray"
+                    android:textColor="@color/black_gray"
+                    android:enabled="false"
+                    style="@style/EditTextCustomHolo"
+                    android:nextFocusDown="@+id/edt_client_city"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/address"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColorHint="@color/light_gray"
+                        android:textColor="@color/black_gray"
+                        android:text="@string/client_address_state"/>
+
+                    <Spinner
+                        android:id="@+id/spn_client_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/client_address_state"
+                        android:spinnerMode="dialog"
+                        style="@style/mySpinnerItemStyle"
+                        android:nextFocusDown="@+id/edt_client_state"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="17sp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/black_gray"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/client_address_city"/>
+
+                    <Spinner
+                        android:id="@+id/spn_client_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/client_address_city"
+                        android:spinnerMode="dialog"
+                        style="@style/mySpinnerItemStyle"
+                        android:nextFocusDown="@+id/edt_client_state"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_client_locality"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/client_address_locality"
+                    android:textColorHint="@color/light_gray"
+                    android:textColor="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:inputType="textCapCharacters"
+                    android:nextFocusDown="@+id/edt_client_district"/>
+
+                <EditText
+                    android:id="@+id/edt_client_district"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/client_address_district"
+                    android:textColorHint="@color/light_gray"
+                    android:textColor="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:inputType="textCapCharacters"
+                    android:nextFocusDown="@+id/edt_client_street"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_client_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/client_address_street_hint"
+                style="@style/EditTextCustomHolo"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                android:inputType="textCapCharacters"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_client_ext_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLength="5"
+                    android:hint="@string/client_address_num_ext_hint"
+                    style="@style/EditTextCustomHolo"
+                    android:textColorHint="@color/light_gray"
+                    android:textColor="@color/black_gray"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/edt_client_int_num"/>
+
+                <EditText
+                    android:id="@+id/edt_client_int_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLength="5"
+                    android:hint="@string/client_address_num_int_hint"
+                    style="@style/EditTextCustomHolo"
+                    android:textColorHint="@color/light_gray"
+                    android:textColor="@color/black_gray"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/edt_client_zip_code"/>
+
+                <EditText
+                    android:id="@+id/edt_client_zip_code"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLength="5"
+                    style="@style/EditTextCustomHolo"
+                    android:textColorHint="@color/light_gray"
+                    android:textColor="@color/black_gray"
+                    android:hint="@string/client_address_zip_code_hint"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+</LinearLayout>

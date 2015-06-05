@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width            ="match_parent"
+        android:layout_height           ="wrap_content"
+        android:gravity                 ="left|center"
+        android:layout_marginBottom     ="10dp"
+        android:orientation             ="vertical">
+
+        <LinearLayout
+            android:layout_width            ="match_parent"
+            android:layout_height           ="match_parent"
+            android:layout_weight           ="30"
+            android:layout_marginBottom     ="10dp"
+            android:weightSum               ="100"
+            android:orientation             ="horizontal">
+
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_height       ="match_parent"
+                android:layout_weight       ="90"
+                android:gravity             ="bottom"
+                android:text                ="@string/no_reason_for_sale"
+                android:textStyle           ="bold"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginBottom ="2dp"
+                android:textSize            ="@dimen/sizeMediumText"
+                android:textColor           ="@color/black_gray"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width    ="match_parent"
+            android:layout_height   ="2dp"
+            android:background      ="@color/light_gray"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="match_parent"
+                    android:layout_weight       ="1"
+                    android:gravity             ="bottom"
+                    android:text                ="@string/reason"
+                    android:textStyle           ="bold"
+                    android:layout_marginBottom ="2dp"
+                    android:textSize            ="@dimen/sizeMediumText"
+                    android:textColor           ="@color/black_gray"
+                />
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_no_sale_reason" />
+
+
+        </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="match_parent"
+                    android:layout_weight       ="1"
+                    android:gravity             ="bottom"
+                    android:text                ="@string/comments"
+                    android:textStyle           ="bold"
+                    android:layout_marginBottom ="2dp"
+                    android:textSize            ="@dimen/sizeMediumText"
+                    android:textColor           ="@color/black_gray"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:id="@+id/edt_no_sale_comments" />
+                </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width            ="match_parent"
+        android:layout_height           ="wrap_content"
+        android:gravity                 ="left|center"
+        android:layout_marginBottom     ="10dp"
+        android:orientation             ="vertical"
+        android:visibility              ="gone">
+
+        <LinearLayout
+            android:layout_width            ="match_parent"
+            android:layout_height           ="match_parent"
+            android:layout_weight           ="30"
+            android:layout_marginBottom     ="10dp"
+            android:weightSum               ="100"
+            android:orientation             ="horizontal">
+
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_height       ="match_parent"
+                android:layout_weight       ="90"
+                android:gravity             ="bottom"
+                android:text                ="@string/checkout"
+                android:textStyle           ="bold"
+                android:layout_marginBottom ="2dp"
+                android:textSize            ="@dimen/sizeMediumText"
+                android:textColor           ="@color/black_gray"/>
+
+
+
+        </LinearLayout>
+    <TextView
+        android:layout_width    ="match_parent"
+        android:layout_height   ="2dp"
+        android:background      ="@color/black_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:layout_margin   ="10dp"
+        android:orientation     ="vertical"
+        android:visibility      ="gone">
+        <TextView
+            android:layout_width  ="match_parent"
+            android:layout_height ="wrap_content"
+            android:textSize      ="@dimen/sizeMediumText"
+            android:text          ="@string/rfns_customer_signature"
+            />
+        <ImageView
+            android:id              ="@+id/imv_no_sale_comments_customer_signature"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="90dp"
+            android:clickable       ="true"
+            android:scaleType       ="centerInside"
+            android:adjustViewBounds="true"
+            android:background      ="@color/black_gray"/>
+
+    </LinearLayout>
+
+</LinearLayout>

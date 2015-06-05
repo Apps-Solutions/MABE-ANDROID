@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Preventa Sellcom</string>
+
+    <!-- string for navigation drawer -->
+    <string name="drawer_wellcome">Usuario</string>
+
+    <!-- Texto para el modulo de evindencias -->
+    <string name="evidence_title">Tipo de evidencia</string>
+    <string name="shelf">Shelf</string>
+    <string name="product">Producto</string>
+    <string name="expired">Caducado</string>
+    <string name="additional">Exhibicion Adicional</string>
+    <string name="store">Tienda</string>
+    <string name="other">Otro</string>
+    <string name="button_continue">Continuar</string>
+    <string name="navigation_drawer_open">Abrir Navigation Drawer</string>
+    <string name="navigation_drawer_close">Cerrar Navigation Drawer</string>
+    <string name="print">Imprimir</string>
+    <string name="log_out">¿Cerrar Sesión?</string>
+    <string name="see_traffic">Ver Tráfico</string>
+    <string name="no_notifications">No Hay Notificaciones</string>
+    <string name="done">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Borrar</string>
+    <string name="date">Fecha</string>
+    <string name="pay">Pagar</string>
+    <string name="folio">Folio</string>
+
+    <!--Module login-->
+    <string name="log_in">Ingresar</string>
+    <string name="password">Contraseña</string>
+    <string name="user">Usuario</string>
+    <string name="logging_in">Inciando Sesión&#8230;</string>
+
+    <!--Module weather-->
+    <string name="location_unavailable">No Se Pudo Obtener Su Posición</string>
+    <string name="weather_unavailable">No Se Pudo Obtener La Información Del Clima</string>
+
+    <!--Module notes-->
+    <string name="add_note">Nota Nueva</string>
+    <string name="no_notes">No Hay Notas</string>
+    <string name="edit_note">Editar Nota</string>
+    <string name="note_deleted">¡Nota Borrada!</string>
+
+    <!--Module products-->
+    <string name="product_price_indicator">Precio Pieza:</string>
+    <string name="product_public_price_indicator">Costo</string>
+    <string name="product_stock_indicator">Stock</string>
+    <string name="product_tax_indicator">Impuesto</string>
+    <string name="product_tax_indicator_with_symbol">Impuesto (%)</string>
+    <string name="product_stock_central_indicator">Stock\ncentral</string>
+    <string name="product_search_hint">Buscar Producto&#8230;</string>
+    <string name="product_photos_hint">Fotos</string>
+    <string name="select_category">Selecciona Una Categoría</string>
+    <string name="select">Selecciona</string>
+    <string name="add_category">Agregar Categoría</string>
+    <string name="cant_find">¿No la Encuentras?</string>
+    <string name="product_deleted">!Producto Borrado!</string>
+    <string name="product_brand_hint">Marca</string>
+    <string name="product_name_hint">Nombre del Producto</string>
+    <string name="product_code_hint">Inserta un Código o Escanéalo</string>
+    <string name="product_description_hint">Descripción del Producto</string>
+    <string name="product_saved">Producto guardado</string>
+    <string name="main_photo_selector">¿Usar como foto principal?</string>
+    <string name="max_photos_number_reached">Sólo Puedes Agregar 5 Fotos</string>
+    <string name="product_boxes_lbl">Cajas</string>
+    <string name="product_pieces_lbl">Piezas</string>
+    <string name="product_total_lbl">Total</string>
+
+
+    <!--Module receipts-->
+    <string name="loading_data">Cargando Datos&#8230;</string>
+    <string name="receipt_taxes">Impuestos</string>
+    <string name="receipt_number">Recibo #</string>
+    <string name="receipt_issued_by">Emitido Por:</string>
+    <string name="receipt_to">Para:</string>
+    <string name="receipt_header_list_quantity">Cantidad</string>
+    <string name="receipt_header_list_description">Descripción</string>
+    <string name="receipt_header_list_price">Precio Unitario</string>
+    <string name="receipt_header_list_amount">Importe</string>
+    <string name="receipt_signature_hint">Nombre y Firma</string>
+    <string name="signature_hint">Firma Aquí</string>
+    <string name="receipt_receiver">Recibe</string>
+    <string name="receipt_issuing">Entrega</string>
+    <string name="receipt_saved">Recibo Guardado</string>
+    <string name="receipt_send">Enviar</string>
+    <string name="receipt_print">Imprimir Recibo</string>
+    <string name="amount_playable">Monto a Pagar</string>
+    <string name="payment_method">Método de Pago</string>
+
+    <!--Module settings-->
+    <string name="language">Idioma</string>
+    <string name="spanish_label">Español</string>
+    <string name="english_label">Inglés</string>
+
+    <!--Module clients-->
+    <string name="client_type_lbl">Tipo de Cliente</string>
+    <string name="client_type_public">Público General</string>
+    <string name="client_type_facturable">Cliente Facturable</string>
+
+    <string name="client_name_hint">Nombre</string>
+    <string name="client_last_name1_hint">Apellido 1</string>
+    <string name="client_last_name2_hint">Apellido 2</string>
+    <string name="client_rfc_hint">RFC</string>
+    <string name="client_curp_hint">CURP</string>
+    <string name="client_phone_hint">Teléfono</string>
+    <string name="client_latitude_hint">Latitud</string>
+    <string name="client_longitude_hint">Longitud</string>
+    <string name="client_email_hint">Correo Electrónico</string>
+    <string name="client_address_street_hint">Calle</string>
+    <string name="client_address_num_ext_hint">Núm. Ext.</string>
+    <string name="client_address_num_int_hint">Núm. Int.</string>
+    <string name="client_address_zip_code_hint">C.P.</string>
+    <string name="client_address_2_hint">Dirección 2</string>
+    <string name="client_address_locality">Municipio</string>
+    <string name="client_address_country">País</string>
+    <string name="client_address_state">Estado</string>
+    <string name="client_address_city">Ciudad</string>
+    <string name="client_address_district">Colonia</string>
+    <string name="client_comments_hint">Escribe un Comentario</string>
+    <string name="client_division_hint">División</string>
+    <string name="client_channel_hint">Canal</string>
+    <string name="client">Cliente</string>
+    <string name="contact">Contacto</string>
+    <string name="address">Dirección</string>
+    <string name="comments">Comentarios</string>
+    <string name="client_saved">Cliente guardado</string>
+
+    <!--Volley messages-->
+    <string name="generic_server_down">Servidor No Responde</string>
+    <string name="no_internet">Sin internet</string>
+    <string name="generic_error">Error Generico</string>
+
+    <!--Error messages-->
+    <string name="error_empty_field">Llena Este Campo</string>
+    <string name="error_invalid_curp">CURP No Válido</string>
+    <string name="error_invalid_rfc">RFC No Válido </string>
+    <string name="error_invalid_tax_value">Éste Valor Es Incorrecto</string>
+    <string name="error_existing_barcode">Éste Código Ya Existe</string>
+    <string name="error_invalid_email_address">Verifica el Email</string>
+    <string name="error_invalid_zip_code">Verifca el Código Postal</string>
+    <string name="error_no_state">Seleccione un Estado</string>
+    <string name="error_no_city">Seleccione una Ciudad</string>
+
+    <string-array name="inventory_titles">
+        <item>Entradas</item>
+
+        <item>Salidas</item>
+
+    </string-array>
+
+    <string-array name="drawer_titles">
+        <item>Inicio</item>
+        <item>Plan de Trabajo</item>
+        <item>Sincronizar aplicación</item>
+        <item>Depósitos</item>
+        <item>Formularios</item>
+        <item>Visitas</item>
+        <item>Pedidos</item>
+        <item>Inventario</item>
+        <item>Agregar Cliente Prospecto</item>
+        <item>Localización</item>
+        <item>Productos</item>
+        <item>Encuestas</item>
+        <item>Documentos</item>
+        <item>Precios</item>
+        <item>Carga Combustible</item>
+        <item>Ajustes</item>
+        <item>Sincronizar aplicación</item>
+        <item>Cerrar sesión</item>
+    </string-array>
+
+    <string-array name="weather_conditions">
+        <item>	Tornado	</item>
+        <item>	Tormenta Tropical	</item>
+        <item>	Huracán	</item>
+        <item>	Tormentas Eléctricas Severas	</item>
+        <item>	Tormentas Eléctricas	</item>
+        <item>	Lluvia con Nieve	</item>
+        <item>	Lluvia con Aguanieve	</item>
+        <item>	Nieve con Aguanieve	</item>
+        <item>	Llovizna Helada	</item>
+        <item>	Llovizna	</item>
+        <item>	Lluvia Helada	</item>
+        <item>	Aguacero	</item>
+        <item>	Aguacero	</item>
+        <item>	Copos de Nieve	</item>
+        <item>	Nevadas Ligeras	</item>
+        <item>	Ventisca de Nieve	</item>
+        <item>	Nieve	</item>
+        <item>	Granizo	</item>
+        <item>	Aguanieve	</item>
+        <item>	Polvo	</item>
+        <item>	Bruma	</item>
+        <item>	Neblina	</item>
+        <item>	Humo	</item>
+        <item>	Borrascoso	</item>
+        <item>	Ventisca	</item>
+        <item>	Frio	</item>
+        <item>	Nublado	</item>
+        <item>	Mayormente Nublado	</item>
+        <item>	Mayormente Nublado	</item>
+        <item>	Parcialmente Nublado	</item>
+        <item>	Parcialmente Nublado	</item>
+        <item>	Despejado	</item>
+        <item>	Soleado	</item>
+        <item>	Claro	</item>
+        <item>	Claro	</item>
+        <item>	Lluvia con Granizo	</item>
+        <item>	Caluroso	</item>
+        <item>	Tormentas Eléctricas Aisladas	</item>
+        <item>	Tormentas Eléctricas Dispersas	</item>
+        <item>	Tormentas Eléctricas Dispersas	</item>
+        <item>	Aguaceros Dispersos	</item>
+        <item>	Nevadas Severas	</item>
+        <item>	Nevadas Dispersas	</item>
+        <item>	Nevadas Severas	</item>
+        <item>	Parcialmente Nublado	</item>
+        <item>	Tormentas	</item>
+        <item>	Nevadas	</item>
+        <item>	Tormentas Aisladas	</item>
+    </string-array>
+
+    <!-- Steps Visit / Pasos de la Visita -->
+    <string name="preparation">Preparación de la Visita</string>
+    <string name="capturing_inventories">Captura de Inventarios</string>
+    <string name="order">Pedido</string>
+    <string name="payment_record">Cobranza</string>
+    <string name="order_cancellation">Cancelación</string>
+    <string name="refund">Cambio Físico</string>
+    <string name="refund_cancellation">Cancelación Cambio Físico</string>
+    <string name="return_order">Devolución</string>
+    <string name="not_sale">No Venta</string>
+    <string name="authorize_visit">Autorizar Salida</string>
+    <string name="end_visit">Finalizar Visita</string>
+    <string name="pre_orders">Pedidos en Preventa</string>
+    <string name="historic_orders">Histórico Pedidos</string>
+    <string name="extra_tasks">Tareas Genéricas</string>
+
+    <!-- Customer Work Plan -->
+    <string name="wp_customer" > Cliente </string>
+    <string name="wp_jde_code" > Código JDE </string>
+    <string name="wp_address"  > Direccion  </string>
+    <string name="wp_email"    > E-mail </string>
+    <string name="wp_telephone"> Telefono </string>
+    <string name="wp_openingt" > Hora de Apertura </string>
+    <string name="wp_closingt" > Hora de Cierre </string>
+    <string name="wp_start"    > Iniciar </string>
+    <string name="wp_continue" > Continuar </string>
+    <string name="wp_closed"   > Terminada </string>
+    <string name="wp_reassign" > Reagendar</string>
+    <string name="wp_no_gps_info">Información de localización de PDV no disponible</string>
+    <string name="visit_completed">La visita ya ha sido finalizada</string>
+
+    <!-- Pre-orders -->
+    <string name="po_order_id" > Folio Pedido: </string>
+    <string name="po_total" > Total: </string>
+    <string name="po_subtotal" > Subtotal: </string>
+    <string name="po_iva" > IVA: </string>
+    <string name="po_date" > Fecha: </string>
+    <string name="po_name" > NOMBRE </string>
+    <string name="po_quantity" > CANT. </string>
+    <string name="po_price" > PRECIO </string>
+
+    <string name="po_edit" > Aceptar Pedido </string>
+    <string name="po_cancel" > Cancelar Pedido </string>
+
+    <!-- Cancellations  -->
+    <string name="cancel_order_type" > Tipo de Pedido: </string>
+    <string name="cancel_order_type_preorder" > Preventa: </string>
+    <string name="cancel_order_type_order" > Pedido: </string>
+
+    <!--  Costumer Data / Datos del cliente -->
+    <string name="point">·</string>
+    <string name="customer_name">Cliente:</string>
+    <string name="customer_address">Dirección:</string>
+    <string name="customer_credit">Verificación de Crédito</string>
+    <string name="customer_order">Pedido:</string>
+    <string name="customer_bill">Factura:</string>
+    <string name="customer_quantity">Cantidad:</string>
+    <string name="customer_cashing">Cobranza:</string>
+    <string name="customer_payment_reception">Recepción de Pago:</string>
+    <string name="customer_payment_type">Tipo de Pago:</string>
+    <string name="customer_status">Status:</string>
+    <string name="customer_statistical_previous_sale">Estadistica Venta Anterior</string>
+    <string name="customer_previous_order">Pedido Anterior:</string>
+    <string name="customer_product">producto:</string>
+    <string name="customer_type_costumer">Tipo de Cliente:</string>
+    <string name="customer_market_actions">Acciones del Mercado:</string>
+    <string name="customer_button_payment_record">Registrar Pago</string>
+
+    <!-- Modulo de cobranza-->
+    <string name="cashing_invoice"> Num. de Factura:</string>
+    <string name="cashing_client"> Cliente:</string>
+    <string name="cashing_date"> Fecha:</string>
+    <string name="cashing_total"> Total:</string>
+
+    <!-- order -->
+    <string name="order_unit">Total pzas:</string>
+    <string name="order_subtotal">Subtotal:</string>
+    <string name="order_total">Total:</string>
+
+    <string name="receipt_order">Pago de Pedido</string>
+    <string name="receipt_invoice">Pago de Factura</string>
+
+    <!-- Partial Liquidation / Liquidacion Parcial -->
+    <string name="movement_number">Numero de Movimiento</string>
+    <string name="quantity">Cantidad</string>
+    <string name="evidence">Evidencia</string>
+    <string name="send">Enviar</string>
+
+    <!-- Partial Liquidation Dialog/ Liquidacion Parcial Dialog -->
+    <string name="retry">Reintentar</string>
+    <string name="cancel2">Cancelar</string>
+    <string name="text_camera">Agregar Foto</string>
+
+    <!-- RequestManager strings -->
+    <string name="req_man_error_contacting_service">Error Contactando el Servicio</string>
+    <string name="req_man_login_info_error">Error de Usuario o Contraseña</string>
+    <string name="req_man_login">Iniciando Sesión</string>
+    <string name="req_man_retrieving_pdvs">Consultando Información de Puntos de Venta</string>
+    <string name="req_man_retrieving_pdv_detail">Consultando Detalle de Punto de Venta</string>
+    <string name="req_man_starting_visit">Enviando Información de Inicio de Visita</string>
+    <string name="req_man_get_pdvs">Consultando Información de PDVs</string>
+    <string name="req_man_set_client">Enviando Información de Cliente Prospecto</string>
+    <string name="req_man_get_states">Consultando Información de Estados</string>
+    <string name="req_man_get_cities">Consultando Información de Ciudades</string>
+    <string name="req_man_retrieving_products_list">Consultando Información de Productos</string>
+    <string name="req_man_get_catalogs">Consultando Información de Catálogos</string>
+    <string name="req_man_get_resources">Consultando Catálogo de Recursos</string>
+    <string name="req_man_get_promotions">Consultando Catálogo de Promociones</string>
+    <string name="req_man_get_exhibitions">Consultando Catálogo de Exhibición</string>
+    <string name="req_man_get_quality">Consultando Catálogo de Calidad</string>
+    <string name="req_man_get_brand">Consultando Catálogo de Marcas</string>
+    <string name="req_man_get_no_sales">Consultando Catálogo de motivos de no venta</string>
+    <string name="req_man_get_user_info">Consultando Información del Usuario</string>
+    <string name="req_man_get_pending_order">Consultando Órdenes Pendientes</string>
+    <string name="req_man_set_no_sale_reason">Enviando motivo de no venta</string>
+    <string name="req_man_set_questionnaire">Enviando cuestionario de mercadeo</string>
+    <string name="req_man_set_supplier_prices">Enviando Información de Precios de Mayoristas</string>
+    <string name="req_man_set_end_visit_authorization">Enviando Información de Autorización de Final de Visita</string>
+    <string name="req_man_sending_form_data">Enviando Información de Formularios</string>
+    <string name="req_man_sending_extra_task_data">Enviando Información de Tareas Extra</string>
+
+    <string name="req_man_down_initial_info">Descargando información inicial</string>
+    <string name="req_man_send_information">Enviando información recabada en modo offline</string>
+
+
+    <string name="req_man_uploading_order_info">Enviando Información de Pedido al Servidor</string>
+    <string name="req_man_get_invoices">Consultando Información de Cobranza</string>
+    <string name="req_man_send_payment">Enviando Información de pago</string>
+    <string name="req_man_send_partial_settlement">Enviando información de Liquidación Parcial</string>
+    <string name="req_man_end_visit">Enviando Información de Fin de Visita</string>
+    <string name="req_man_logout">Finalizando Sesión</string>
+    <string name="req_man_no_invoices">No Se Cuenta Con Información De Facturas Pendientes</string>
+
+    <string name="req_man_confirm_cancel_order">¿Estás seguro de cancelar el pedido?</string>
+    <string name="req_man_error_cancel_order">No existe información de pedido a cancelar</string>
+    <string name="req_man_error_preorder_available">Pedido de preventa registrado. No es posible levantar nuevo pedido</string>
+    <string name="req_man_error_order_already_sent">Ya se ha enviado un pedido, imposible levantar uno nuevo</string>
+    <string name="req_man_error_preorder_order_already_sent">Pedido enviado. Módulo de preventa deshabilitado</string>
+    <string name="req_man_error_no_preorder">El cliente no cuenta con ordenes de preventa</string>
+
+    <string name="req_man_error_order_pending_invoices">El cliente cuenta con facturas pendientes. Imposible agendar pedido.</string>
+
+    <string name="req_man_error_found_refund">Registro de cambio físico existente. No es posible realizar otro cambio. </string>
+    <string name="req_man_error_not_found_refund">No existe información de cambio físico que cancelar </string>
+    <string name="req_man_confirm_cancel_refund">Esta seguro de cancelar el cambio físico existente?</string>
+
+    <string name="req_man_presales_active">Pedido en preventa. Use el módulo de preventa para cancelar el pedido existente</string>
+
+    <string name="req_man_autosale_stock">Cuestionario de inventario enviado exitosamente</string>
+    <string name="req_man_autosale_stock_sent">Cuestionario de inventario enviado exitosamente</string>
+    <string name="req_man_warehouse_sent">Registro de bodega enviado exitosamente</string>
+
+    <string name="req_man_signature_sent">Autorización de fin de visita enviado satisfactoriamente</string>
+
+    <string name="req_man_get_initial_info">Consultando información inicial</string>
+
+    <string name="req_man_error_found_no_sale_reason">Registro de motivo de no venta existente. No es posible enviar otro registro. </string>
+
+    <string name="req_man_confirm_logout">¿Desea abandonar la sesión actual?</string>
+    <string name="req_man_confirm_exit">¿Desea salir de la aplicación?</string>
+
+
+    <string name="req_man_incomplete_data">Error! Datos Incompletos</string>
+    <string name="req_man_no_evidence_partial_settlement">Error! Realice La Captura De Evidencia Para Proceder Con El Registro De Depósito</string>
+    <string name="req_man_settlement_sent">Depósito enviado exitosamente</string>
+    <string name="req_man_no_clients_info">No Se Tiene Información De PDVS, Imposible Generar Pedidos</string>
+    <string name="req_man_fueling_sent">Abasto De Combustible Enviado Exitosamente</string>
+    <string name="req_man_no_sale_reason">Motivo de no venta enviado satisfactoriamente</string>
+    <string name="req_man_no_evidence_fueling">¡Error! Realice la captura de evidencia para proceder con el registro de abasto de combustible</string>
+
+    <string name="req_man_error_visit_already_starter_1">La Visita (</string>
+    <string name="req_man_error_visit_already_starter_2"> ya se ha iniciado </string>
+    <string name="req_man_error_visit_already_ended_2">ya se ha finalizado </string>
+    <string name="req_man_error_incomplete_data_new_client">El RFC Y Nombre Son Campos Necesarios Para La Alta De Cliente Prospecto.</string>
+    <string name="req_man_new_client_sent_successfully">Información De Cliente Prospecto Enviada Satisfactoriamente</string>
+    <string name="req_man_error_credentials">Error De Usuario Y/O Contraseña</string>
+    <string name="req_man_error_empty_payment">Ingrese Una Cantidad A Pagar Válida</string>
+    <string name="req_man_error_no_printer">No se cuenta con una impresora configurada</string>
+
+    <string name="req_man_visit_ended_successfully">Visita Finalizada Exitosamente</string>
+    <string name="req_man_visit_marketing_questionnaire_sent">Cuestionario de mercadeo enviado correctamente</string>
+
+    <string name="req_man_visit_not_valid_workplan">El usuario no cuenta con un plan de trabajo válido</string>
+
+    <string name="req_man_">Depósito enviado exitosamente</string>
+
+
+        <string name="req_man_extra_task_sent">Información de Tarea Genérica Enviada Satisfactoriamente</string>
+
+    <!-- Synchronizer strings -->
+    <string name="sync_upload_info_success">Información recabada offline enviada satisfactoriamente</string>
+    <string name="sync_down_info_success">Información de usuario descargada satisfactoriamente</string>
+    <string name="sync_last_synchronization">Última sincronización: </string>
+
+    <!-- Work Plan adapter list -->
+    <string name="wp_item_customer">Nombre: </string>
+    <string name="wp_item_hour">Hora: </string>
+    <string name="wp_item_status">Estado: </string>
+
+    <!-- Array for pay method -->
+    <string-array name="method_pay">
+        <item>Contado</item>
+        <item>Crédito</item>
+        <item>Ficha de Déposito</item>
+    </string-array>
+
+    <string-array name="method_pay_invoices">
+        <item>Contado</item>
+        <item>Ficha de Déposito</item>
+    </string-array>
+
+    <!-- TicketGenerator -->
+    <string name="tg_printing_ticket">Enviando Recibo a Impresión</string>
+    <string name="tg_ticket_printed">El recibo ha sido impreso, puede enviar el pedido</string>
+    <string name="tg_error_printing_ticket">Error imprimiendo el recibo, intente de nuevo</string>
+
+    <!-- Competition Promotion -->
+    <string name="cp_product">Producto:</string>
+    <string name="cp_public_price">Precio Publico:</string>
+    <string name="cp_offer_price">Precio Oferta:</string>
+    <string name="cp_validity_start_date">Fecha Inicio Vigencia:</string>
+    <string name="cp_validity_end_date">Fecha Fin Vigencia:</string>
+    <string name="cp_grafic_material">Material Gráfico:</string>
+    <string name="cp_edging">Cenefa</string>
+    <string name="cp_collar">Collarin</string>
+    <string name="cp_brochure">Folleto</string>
+    <string name="cp_activation">Activacion:</string>
+    <string name="cp_yes">Si</string>
+    <string name="cp_no">No</string>
+    <string name="cp_promotion_type">Tipo De Promoción:</string>
+    <string name="cp_diferentiated_sku">SKU Diferenciado:</string>
+    <string name="cp_riv_sku">SKU:</string>
+    <string name="cp_promotional_merchandise">Mercancia De La Promoción:</string>
+    <string name="cp_exhibit_account">Cuenta Con Exhibición:</string>
+    <string name="cp_exhibit_type">Tipo De Exhibición:</string>
+    <string name="cp_promotion_existence_boxes">Existencia En Cajas De Promoción:</string>
+    <string name="cp_capture_evidence">Capturar Evidencia</string>
+
+    <!-- Shelf Review -->
+    <string name="sr_customer">Cliente:</string>
+    <string name="sr_promoter">Promotor:</string>
+    <string name="sr_customer_data">Datos del cliente</string>
+    <string name="sr_products">Productos</string>
+    <string name="sr_product">Producto:</string>
+    <string name="sr_assortment_and_quality">Surtido y Calidad</string>
+    <string name="sr_current_existence">Existencia Actual:</string>
+    <string name="sr_current_existence_shelf">Existencia Actual en Anaquel:</string>
+    <string name="sr_current_existence_exhibit">Existencia Actual en Exhibición:</string>
+    <string name="sr_boxes_to_filling_shelf">Cajas Para Rellenar Anaquel:</string>
+    <string name="sr_boxes_to_filling_exhibit">Cajas Para Rellenar Exhibición:</string>
+    <string name="sr_total_boxes">Cajas a Surtir:</string>
+    <string name="sr_public_price">Precio Al Publico:</string>
+    <string name="sr_expiry_date">Fecha De Caducidad:</string>
+    <string name="sr_front_tot">Frentes propios anaquel:</string>
+    <string name="sr_front_tot_riv_1">Frentes totales competencia (1):</string>
+    <string name="sr_front_tot_riv_2">Frentes totales competencia (2):</string>
+    <string name="sr_front_tot_shelf">Frentes totales anaquel:</string>
+
+
+    <!-- Module Warehouse -->
+    <string name="wh_product">Producto:</string>
+    <string name="wh_boxes_out">Cajas Que Salen De La Bodega:</string>
+    <string name="wh_ending_inventory">Inventario Final En Bodega:</string>
+    <string name="wh_total_inventory">Inventario Total En Tienda:</string>
+    <string name="wh_productT">Producto</string>
+    <string name="wh_boxex_outsideT">F. Bodega</string>
+    <string name="wh_ending_inventoryT">Inv. Final</string>
+    <string name="wh_total_inventoryT">Inv. Total</string>
+
+    <!-- Module Inventories -->
+    <string name="inv_inventory">Inventario</string>
+    <string name="inv_client">Cliente:</string>
+    <string name="inv_promoter">Promotor:</string>
+    <string name="inv_products">Productos</string>
+    <string name="inv_product">Producto:</string>
+    <string name="inv_existence">Existencia:</string>
+    <string name="inv_existence_sys">Existencia En Sistema:</string>
+    <string name="inv_difference">Diferencia:</string>
+    <string name="inv_difference_comment">Comentarios De Diferencia:</string>
+    <string name="inv_adjust_made">¿Se realizó ajuste?:</string>
+
+    <!-- Module Measurement Furniture -->
+    <string name="mf_title">Medición De Muebles</string>
+    <string name="mf_client">Cliente:</string>
+    <string name="mf_promoter">Promotor:</string>
+    <string name="mf_front">Frente:</string>
+    <string name="mf_left">Izquierda:</string>
+    <string name="mf_right">Derecha:</string>
+    <string name="mf_sections">Tramos:</string>
+    <string name="mf_sectionsT">Tramos</string>
+    <string name="mf_levels_section">Niveles Por Tramo:</string>
+    <string name="mf_width_section">Ancho Por Tramo:</string>
+    <string name="mf_height_section">Alto Por Tramo:</string>
+    <string name="mf_depth">Profundidad:</string>
+
+    <string name="mf_levelsT">Niveles</string>
+    <string name="mf_what_section">¿Qué sección es?:</string>
+    <string name="mf_productsT">Productos</string>
+    <string name="mf_what_level">¿Cual es el nivel?:</string>
+    <string name="mf_product">Producto:</string>
+    <string name="mf_fronts">Frentes:</string>
+    <string name="mf_depths">Profundidades:</string>
+
+    <!-- Module Wholesale Prices-->
+    <string name="whp_title">Precios Mayoristas</string>
+    <string name="whp_brand">Marca:</string>
+    <string name="whp_product">Producto:</string>
+    <string name="whp_price">Precio:</string>
+    <string name="whp_chief_comment">Comentario Jefe De Abarrotes:</string>
+    <string name="whp_chief_signature">Firma Jefe De Abarrotes:</string>
+
+    <!-- Module Capturing Inventories-->
+    <string name="ci_title">Captura de Inventarios</string>
+    <string name="ci_product">Producto:</string>
+    <string name="ci_code">Código:</string>
+    <string name="ci_quantity">Cantidad:</string>
+    <string name="ci_unitm">Unidad De Medida:</string>
+    <string name="ci_unitm_boxes">Cajas</string>
+    <string name="ci_unitm_bottles">Botellas</string>
+    <string name="ci_sale_made">Venta Efectuada:</string>
+    <string name="ci_suggested_order">pedido sugerido:</string>
+    <string name="ci_productT">Producto</string>
+    <string name="ci_quantityT">Cantidad</string>
+    <string name="ci_unitmT">UM</string>
+    <string name="ci_actionT">Acción</string>
+
+    <!-- Module Order Entry-->
+    <string name="oe_title">Captura de Pedido</string>
+    <string name="oe_order_number">Número De Pedido:</string>
+    <string name="oe_type_sale">Tipo De Venta:</string>
+    <string name="oe_delivery_date">Fecha De Entrega:</string>
+    <string name="oe_products">Productos</string>
+    <string name="oe_product">Producto:</string>
+    <string name="oe_quantity">Cantidad:</string>
+    <string name="oe_unitm">Unidad De Medida:</string>
+    <string name="oe_unitm_boxes">Cajas</string>
+    <string name="oe_unitm_bottles">Botellas</string>
+    <string name="oe_productT">Producto</string>
+    <string name="oe_quantityT">Cantidad</string>
+    <string name="oe_unitmT">UM</string>
+    <string name="oe_actionT">Acción</string>
+
+    <!-- Module Order Cancellation-->
+    <string name="oc_title">Cancelación de Pedido</string>
+    <string name="oc_order_number">Número De Pedido:</string>
+    <string name="oc_client">Cliente:</string>
+    <string name="oc_address">Dirección:</string>
+    <string name="oc_productT">Producto</string>
+    <string name="oc_quantityT">Cantidad</string>
+    <string name="oc_unitmT">UM</string>
+    <string name="oc_cancellation">Cancelar Pedido</string>
+
+    <!-- Module Order Fueling-->
+    <string name="fuel_title">Carga de Combustible</string>
+    <string name="fuel_type">Tipo:</string>
+    <string name="fuel_place">Lugar:</string>
+    <string name="fuel_km_actual">KM Actual:</string>
+    <string name="fuel_liters">Litros:</string>
+    <string name="fuel_amount">Importe:</string>
+    <string name="fuel_ticket_bill">Ticket/Factura:</string>
+    <string name="fuel_observations">Observaciones:</string>
+    <string name="fuel_capture_evidence">Capturar Evidencia</string>
+    <string name="fuel_save_expense">Guardar Gasto</string>
+
+    <!-- Offer -->
+    <string name="o_offer_price">Precio Oferta:</string>
+    <string name="o_validity_start_date">Fecha Inicio Vigencia:</string>
+    <string name="o_validity_end_date">Fecha Fin Vigencia:</string>
+    <string name="o_grafic_material">Material Gráfico:</string>
+    <string name="o_edging">Cenefa</string>
+    <string name="o_collar">Collarin</string>
+    <string name="o_forelock">Copete</string>
+    <string name="o_brochure">Folleto</string>
+    <string name="o_newspaper">Periódico</string>
+    <string name="o_ad">Anuncio</string>
+    <string name="o_activation">Activación:</string>
+    <string name="o_yes">Si</string>
+    <string name="o_no">No</string>
+    <string name="o_promotion_type">Tipo De Promoción:</string>
+    <string name="o_promotional_merchandise">Mecánica De La Promoción:</string>
+    <string name="o_exhibit_account">Cuenta Con Exhibición:</string>
+    <string name="o_exhibit_type">Tipo De Exhibición:</string>
+    <string name="o_existence_promotion_boxes">Existencia En Cajas De Promoción:</string>
+    <string name="o_active_and_or_ragasa_resources">Activo y/o Recurso Ragasa:</string>
+    <string name="o_capture_evidence">Capturar Evidencia</string>
+    <string name="msj_offer_price">El precio de oferta debe ser menor que el precio al publico</string>
+
+
+    <string name="o_qual_incidences">¿Incidencias de Calidad?</string>
+    <string name="o_own_offers">¿Ofertas y promociones?</string>
+    <string name="o_comp_offers">¿Ofertas de competencia?</string>
+
+    <!-- Quality Incidences -->
+    <string name="qi_problem_type">Tipo De Problema:</string>
+    <string name="qi_description">Descripción:</string>
+    <string name="qi_batch">Lote:</string>
+    <string name="qi_line">Linea:</string>
+    <string name="qi_bottles_problem">Botellas Con Problema:</string>
+    <string name="qi_capture_evidence">Capturar Evidencia</string>
+
+    <!-- Print for referral -->
+    <string name="pfr_total_bottles">Total Botellas:</string>
+    <string name="pfr_subtotal">Subtotal:</string>
+    <string name="pfr_discount">Descuento:</string>
+    <string name="pfr_tax">Impuesto:</string>
+    <string name="pfr_total">Total:</string>
+    <string name="pfr_print_remission">Imprimir Remisión</string>
+    <string name="pfr_payment_record">Registrar Pago</string>
+
+    <!-- Payment Record -->
+    <string name="pr_payment_record">Registrar Pago</string>
+    <string name="pr_payment_record2">Registrar Pago:</string>
+    <string name="pr_amount">Monto:</string>
+    <string name="pr_save_payment">Guardar Pago</string>
+
+    <!-- Reasons for not sellling -->
+    <string name="rfns_reasons_for_not_selling">Motivos de no venta</string>
+    <string name="rfns_reason">Motivo:</string>
+    <string name="rfns_comments">Comentarios:</string>
+    <string name="rfns_save_reason">Guardar Motivo</string>
+    <string name="rfns_exit_record">Registro de salida</string>
+    <string name="rfns_customer_signature">Firma Del Cliente:</string>
+    <string name="rfns_send_information">Enviar Información</string>
+
+    <!-- Returns -->
+    <string name="r_returns">Devoluciones:</string>
+    <string name="r_product">Producto:</string>
+    <string name="r_quantity">Cantidad:</string>
+    <string name="r_unit_of_measurement">Unidad De Medida:</string>
+    <string name="r_boxes">Cajas:</string>
+    <string name="r_bottles">Botellas:</string>
+    <string name="r_reason">Motivo:</string>
+    <string name="r_expiry_date">Fecha De Caducidad:</string>
+    <string name="r_batch">Lote:</string>
+    <string name="r_capture_evidence">Capturar Evidencia</string>
+    <string name="r_save_return">Guardar Devolución</string>
+    <string name="fuel_type_gas">Gasolina</string>
+    <string name="fuel_type_diesel">Diesel</string>
+
+    <string name="cp_title">Promoción De La Competencia</string>
+    <string name="sr_title">Revisión De Anaquel</string>
+    <string name="wh_title">Bodega</string>
+    <string name="o_offer_title">Ofertas Y Promociones</string>
+    <string name="qi_title">Incidencias De Calidad</string>
+
+    <!-- MarketingQuestionnaire -->
+    <string name="mq_shelf_review">Revisión de Anaquel</string>
+    <string name="mq_quality_incidence">Incidencias de Calidad</string>
+    <string name="mq_offers_and_or_promotions">Ofertas y/o Promociones</string>
+    <string name="mq_cap_offers_and_or_promotions">¿Existen ofertas y/o promociones?</string>
+    <string name="mq_competition_promotions">Promociones de la Competencia</string>
+    <string name="mq_warehouse">Bodega</string>
+
+    <!-- StepVisit/selfService -->
+    <string name="svss_marketing_questionnaire">Cuestionario De Mercadeo</string>
+    <string name="svss_inventory_questionnaire">Cuestionario De Inventario</string>
+    <string name="svss_store_check">Store Check</string>
+    <string name="svss_warehouse">Bodega</string>
+    <string name="svss_measurement_of_furniture">Medición De Muebles</string>
+
+    <string name="sts_enabling_bluetooth">Habilitando bluetooth</string>
+    <string name="sts_enabled_bluetooth">Bluetooth habilitado</string>
+
+    <string name="sts_search_printer">Buscar Impresora</string>
+    <string name="sts_searching_printer">Buscando Impresora...</string>
+    <string name="sts_test_printer">Probar Impresora</string>
+    <string name="sts_save_printer">Guardar Impresora</string>
+    <string name="sts_device_found">Dispositivo Encontrado</string>
+    <string name="sts_printer_saved">Impresora Guardada: </string>
+
+    <!-- Fragment NO REASON FOR SALE -->
+    <string name="no_reason_for_sale">Motivo de No Venta</string>
+    <string name="reason">Reason</string>
+    <string name="checkout">Registro de salida</string>
+
+    <!-- Ticket Generator -->
+    <string name="print_visit_ticket">Imprimir Ticket Visita</string>
+
+    <!-- FragmentAuthorizeVisit -->
+    <string name="coment_authorize_visit">Comentario</string>
+    <string name="write_a_coment">Escribir un comentario</string>
+    <string name="missing_signature">Falta Firma</string>
+
+
+    <!-- FragmentForm -->
+    <string name="observation_extra_task">Observación</string>
+    <string name="add_observation_extra_task">Escribir una Observación</string>
+    <string name="form_send_task">Esta tarea ya ha sido enviada</string>
+    <string name="form_no_task_generic">No hay tareas genéricas</string>
+
+    <!-- FragmentStoreCkeck -->
+
+    <string name="sch_position_staff_to_review">Puesto del personal a Revisar</string>
+    <string name="sch_staff_PDV">¿El personal PDV asistío a la tienda?</string>
+    <string name="sch_staff_registered_bitacora">¿El personal PDV se registró correctamente en la bitacora de la tienda?</string>
+    <string name="sch_staff_point_of_sale">¿El personal de punto de venta llegó a tiempo a la tienda?</string>
+    <string name="sch_flow_people_store">Flujo de personas en la tienda</string>
+    <string name="sch_additional_exhibitions">¿Se cuenta con espacios disponibles en la tienda para lograr exhibiciones adicionales?</string>
+    <string name="sch_product_outside_forniture">¿Se cuenta con producto exhibido fuera del mueble?</string>
+    <string name="sch_kind_exhibition">¿Qué tipo de exhibición?</string>
+    <string name="sch_stocked_exhibition">¿La exhibición se encuentra abastecida?</string>
+    <string name="sch_product_frenteado">¿El producto se encuentra frenteado, careado y tiene la rotación según el estándar?</string>
+    <string name="sch_flaws_expiration">¿Existen fallas de caducidad en el producto?</string>
+    <string name="sch_flaws_quality">¿Existen fallas de calidad en el producto?</string>
+    <string name="sch_free_items_unrelated">¿La exhibición esta libre de articulos ajenos a la activación?</string>
+    <string name="sch_display_prices">¿La exhibición cuenta con precios exhibidos y vigentes?</string>
+    <string name="sch_POP_material">¿La exhibición cuenta con material POP vigente colocado según el estandar?</string>
+
+            <!-- FragmentStoreCkeck Arrays/Spinners-->
+            <string name="spn_general_yes">Yes</string>
+            <string name="spn_general_no">No</string>
+            <string name="spn_general_store_unassigned">Tienda no asignada</string>
+
+            <string name="spn_position_staff_promoter">Promotor</string>
+            <string name="spn_position_staff_opv">OPV</string>
+            <string name="spn_position_staff_salesman_jr">Vendedor Jr</string>
+            <string name="spn_position_staff_demonstratorship">Demostradora</string>
+
+            <string name="spn_staff_registered_bitacora_not_found_staff">No se encontro al personal</string>
+
+            <string name="spn_flow_people_store_high">Alto</string>
+            <string name="spn_flow_people_store_medium">Medio</string>
+            <string name="spn_flow_people_store_low">Bajo</string>
+
+            <string name="spn_kind_exhibition_multiple_choise">Opción multiple</string>
+            <string name="spn_kind_exhibition_island">Isla</string>
+            <string name="spn_kind_exhibition_head">Cabecera</string>
+            <string name="spn_kind_exhibition_earring_or_nuisance">Arete o Estorbo</string>
+
+</resources>

@@ -1,0 +1,1054 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation     ="vertical"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:padding         ="5dp"
+    android:background      ="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="left|center"
+            android:weightSum       ="100"
+            android:orientation     ="vertical">
+            />
+            <TextView
+                android:id                  ="@+id/tv_customer_shelf_review"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:layout_weight       ="70"
+                android:layout_marginBottom ="10dp"
+                android:gravity             ="center_horizontal"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="SORIANA SUC. 54 SAN AGUSTIN"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width            ="match_parent"
+            android:layout_height           ="wrap_content"
+            android:gravity                 ="left|center"
+            android:layout_marginBottom     ="10dp"
+            android:orientation             ="vertical">
+
+            <TextView
+                android:layout_width    ="match_parent"
+                android:layout_height   ="2dp"
+                android:background      ="@color/light_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/cp_product"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/mySpinnerItemStyle"
+                android:id="@+id/spn_sr_product_type"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width            ="match_parent"
+            android:layout_height           ="wrap_content"
+            android:gravity                 ="left|center"
+            android:layout_marginBottom     ="10dp"
+            android:orientation             ="vertical">
+
+            <LinearLayout
+                android:layout_width            ="match_parent"
+                android:layout_height           ="match_parent"
+                android:layout_weight           ="30"
+                android:layout_marginBottom     ="10dp"
+                android:weightSum               ="100"
+                android:orientation             ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="match_parent"
+                    android:layout_weight       ="90"
+                    android:gravity             ="bottom"
+                    android:text                ="@string/sr_assortment_and_quality"
+                    android:textStyle           ="bold"
+                    android:layout_marginBottom ="2dp"
+                    android:textSize            ="@dimen/sizeMediumText"
+                    android:textColor           ="@color/black_gray"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width    ="match_parent"
+                android:layout_height   ="2dp"
+                android:background      ="@color/light_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width            ="match_parent"
+            android:layout_height           ="wrap_content"
+            android:gravity                 ="left|center"
+            android:layout_marginBottom     ="10dp"
+            android:orientation             ="vertical">
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center"
+                android:layout_marginBottom ="10dp"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:text                ="@string/sr_current_existence_shelf"
+                    android:layout_marginRight  ="10dp"
+                    android:textColor           ="@color/black_gray"
+                    />
+
+                <EditText
+                    android:id              ="@+id/edt_sr_current_existence_shelf"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:textColor       ="@color/black_gray"
+                    android:inputType       ="number"
+                    style="@style/EditTextCustomHolo"
+                    android:gravity         ="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center"
+                android:layout_marginBottom ="10dp"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:text                ="@string/sr_current_existence_exhibit"
+                    android:layout_marginRight  ="10dp"
+                    android:textColor           ="@color/black_gray"
+                    />
+
+                <EditText
+                    android:id              ="@+id/edt_sr_current_existence_exhibit"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:inputType       ="number"
+                    android:gravity         ="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center"
+                android:layout_marginBottom ="10dp"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:text                ="@string/sr_boxes_to_filling_shelf"
+                    android:layout_marginRight  ="10dp"
+                    android:textColor           ="@color/black_gray"
+                    />
+
+                <EditText
+                    android:id              ="@+id/edt_sr_box_shelf"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:inputType       ="number"
+                    android:gravity         ="center_horizontal"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center"
+                android:layout_marginBottom ="10dp"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:text                ="@string/sr_boxes_to_filling_exhibit"
+                    android:layout_marginRight  ="10dp"
+                    android:textColor           ="@color/black_gray"
+                    />
+
+                <EditText
+                    android:id              ="@+id/edt_sr_box_exhibit"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:inputType       ="number"
+                    android:gravity         ="center_horizontal"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:nextFocusDown=  "@+id/edt_sr_price_public"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center"
+                android:layout_marginBottom ="10dp"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:text                ="@string/sr_total_boxes"
+                    android:layout_marginRight  ="10dp"
+                    android:textColor           ="@color/black_gray"/>
+
+                <EditText
+                    android:id              ="@+id/edt_sr_box_total"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:inputType       ="number"
+                    android:enabled         ="false"
+                    android:gravity         ="center_horizontal"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center"
+                android:layout_marginBottom ="10dp"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:text                ="@string/sr_public_price"
+                    android:layout_marginRight  ="10dp"
+                    android:textColor           ="@color/black_gray"/>
+
+                <EditText
+                    android:id              ="@+id/edt_sr_price_public"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="wrap_content"
+                    android:inputType       ="numberDecimal"
+                    android:gravity         ="center_horizontal"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="left|center"
+                android:layout_marginBottom ="10dp"
+                android:weightSum           ="100"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="wrap_content"
+                    android:layout_weight       ="50"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:gravity             ="left"
+                    android:text                ="@string/sr_expiry_date"
+                    android:layout_marginRight  ="5dp"
+                    android:textColor           ="@color/black_gray"/>
+
+                <EditText
+                    android:id              ="@+id/edt_sr_expiracy_date"
+                    android:layout_width    ="0dp"
+                    android:layout_weight   ="50"
+                    android:layout_height   ="wrap_content"
+                    android:inputType       ="numberDecimal"
+                    android:gravity         ="center_horizontal"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="left|center"
+                android:layout_marginBottom ="10dp"
+                android:weightSum           ="100"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="wrap_content"
+                    android:layout_weight       ="70"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:gravity             ="left"
+                    android:text                ="@string/sr_front_tot"
+                    android:layout_marginRight  ="5dp"
+                    android:textColor           ="@color/black_gray"/>
+
+                <EditText
+                    android:id              ="@+id/edt_sr_front_tot"
+                    android:layout_width    ="0dp"
+                    android:layout_weight   ="30"
+                    android:layout_height   ="wrap_content"
+                    android:inputType       ="number"
+                    android:gravity         ="center_horizontal"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="left|center"
+                android:layout_marginBottom ="10dp"
+                android:weightSum           ="100"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="wrap_content"
+                    android:layout_weight       ="75"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:gravity             ="left"
+                    android:text                ="@string/sr_front_tot_riv_1"
+                    android:layout_marginRight  ="5dp"
+                    android:textColor           ="@color/black_gray"/>
+
+                <EditText
+                    android:id              ="@+id/edt_sr_rival_1_front_tot"
+                    android:layout_width    ="0dp"
+                    android:layout_weight   ="25"
+                    android:layout_height   ="wrap_content"
+                    android:inputType       ="number"
+                    android:gravity         ="center_horizontal"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="left|center"
+                android:layout_marginBottom ="10dp"
+                android:weightSum           ="100"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="wrap_content"
+                    android:layout_weight       ="75"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:gravity             ="left"
+                    android:text                ="@string/sr_front_tot_riv_2"
+                    android:layout_marginRight  ="5dp"
+                    android:textColor           ="@color/black_gray"/>
+
+                <EditText
+                    android:id              ="@+id/edt_sr_rival_2_front_tot"
+                    android:layout_width    ="0dp"
+                    android:layout_weight   ="25"
+                    android:layout_height   ="wrap_content"
+                    android:inputType       ="number"
+                    android:gravity         ="center_horizontal"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="left|center"
+                android:layout_marginBottom ="10dp"
+                android:weightSum           ="100"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="wrap_content"
+                    android:layout_weight       ="70"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:gravity             ="left"
+                    android:text                ="@string/sr_front_tot_shelf"
+                    android:layout_marginRight  ="5dp"
+                    android:textColor           ="@color/black_gray"/>
+
+                <EditText
+                    android:id              ="@+id/edt_sr_front_tot_1"
+                    android:layout_width    ="0dp"
+                    android:layout_weight   ="30"
+                    android:layout_height   ="wrap_content"
+                    android:inputType       ="number"
+                    android:gravity         ="center_horizontal"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_qua_inc"
+            android:layout_width            ="match_parent"
+            android:layout_height           ="wrap_content"
+            android:gravity                 ="left|center"
+            android:layout_marginBottom     ="10dp"
+            android:orientation             ="vertical">
+
+            <LinearLayout
+                android:layout_width            ="match_parent"
+                android:layout_height           ="wrap_content"
+                android:gravity                 ="left|center"
+                android:layout_marginBottom     ="10dp"
+                android:orientation             ="vertical">
+
+                <LinearLayout
+                    android:layout_width            ="match_parent"
+                    android:layout_height           ="match_parent"
+                    android:layout_weight           ="30"
+                    android:layout_marginBottom     ="10dp"
+                    android:weightSum               ="100"
+                    android:orientation             ="horizontal">
+
+                    <TextView
+                        android:layout_width        ="0dp"
+                        android:layout_height       ="match_parent"
+                        android:layout_weight       ="95"
+                        android:gravity             ="bottom"
+                        android:text                ="@string/mq_quality_incidence"
+                        android:textStyle           ="bold"
+                        android:layout_marginBottom ="2dp"
+                        android:textSize            ="@dimen/sizeMediumText"
+                        android:textColor           ="@color/black_gray"/>
+
+                    <ImageButton
+                        android:id              ="@+id/btn_add_quality_incidence"
+                        android:layout_width    ="wrap_content"
+                        android:layout_weight   ="5"
+                        android:layout_height   ="wrap_content"
+                        android:layout_gravity  ="right|bottom"
+                        android:src             ="@drawable/ic_add_enabled"
+                        android:background      ="@color/zxing_transparent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="2dp"
+                    android:background      ="@color/light_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id              ="@+id/qua_inc_table_container"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:layout_margin   ="20dp"
+                android:gravity         ="center"
+                android:orientation     ="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width            ="match_parent"
+            android:layout_height           ="wrap_content"
+            android:gravity                 ="left|center"
+            android:layout_marginBottom     ="10dp"
+            android:orientation             ="vertical">
+
+            <LinearLayout
+                android:layout_width            ="match_parent"
+                android:layout_height           ="match_parent"
+                android:layout_weight           ="30"
+                android:layout_marginBottom     ="10dp"
+                android:weightSum               ="100"
+                android:orientation             ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="match_parent"
+                    android:layout_weight       ="90"
+                    android:gravity             ="bottom"
+                    android:text                ="@string/mq_offers_and_or_promotions"
+                    android:textStyle           ="bold"
+                    android:layout_marginBottom ="2dp"
+                    android:textSize            ="@dimen/sizeMediumText"
+                    android:textColor           ="@color/black_gray"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width    ="match_parent"
+                android:layout_height   ="2dp"
+                android:background      ="@color/light_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width            ="match_parent"
+            android:layout_height           ="match_parent"
+            android:layout_weight           ="30"
+            android:layout_marginBottom     ="10dp"
+            android:weightSum               ="100"
+            android:orientation             ="horizontal">
+
+            <Switch
+                android:id              ="@+id/swt_own_prom"
+                android:layout_width    ="0dp"
+                android:textOff         ="NO"
+                android:textOn          ="SI"
+                android:layout_height   ="wrap_content"
+                android:text            ="@string/mq_cap_offers_and_or_promotions"
+                android:textColor       ="@color/black_gray"
+                android:layout_weight   ="90"
+                android:checked         ="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id              ="@+id/lin_own_prom"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:orientation     ="vertical">
+
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="left|center"
+                android:layout_marginBottom ="10dp"
+                android:weightSum           ="100"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:text                ="@string/cp_offer_price"
+                    android:layout_marginRight  ="10dp"
+                    android:textColor           ="@color/black_gray"
+                    />
+
+                <EditText
+                    android:id              ="@+id/edt_op_price_offers"
+                    android:layout_width    ="0dp"
+                    android:layout_height   ="wrap_content"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:inputType       ="numberDecimal"
+                    android:gravity         ="center_horizontal"
+                    android:layout_weight   ="60"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="left|center"
+                android:layout_marginBottom ="10dp"
+                android:weightSum           ="100"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="match_parent"
+                    android:layout_weight       ="60"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:text                ="@string/o_validity_start_date"
+                    android:layout_marginRight  ="10dp"
+                    android:textColor           ="@color/black_gray"
+                    android:gravity             ="center_vertical" />
+
+                <EditText
+                    android:id              ="@+id/edt_op_start_offers"
+                    android:layout_width    ="0dp"
+                    android:layout_height   ="wrap_content"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:inputType       ="numberDecimal"
+                    android:gravity         ="center_horizontal"
+                    android:layout_weight   ="40"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="left|center"
+                android:layout_marginBottom ="10dp"
+                android:weightSum           ="100"
+                android:orientation         ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="wrap_content"
+                    android:layout_weight       ="60"
+                    android:textSize            ="@dimen/sizeNormalText"
+                    android:text                ="@string/o_validity_end_date"
+                    android:layout_marginRight  ="10dp"
+                    android:textColor           ="@color/black_gray"
+                    />
+
+                <EditText
+                    android:id              ="@+id/edt_op_end_offers"
+                    android:layout_width    ="0dp"
+                    android:layout_height   ="wrap_content"
+                    android:textColor       ="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:inputType       ="numberDecimal"
+                    android:gravity         ="center_horizontal"
+                    android:layout_weight   ="40"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:text="@string/o_grafic_material"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black_gray"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/o_edging"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:id="@+id/chk_op_1" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/o_collar"
+                    android:id="@+id/chk_op_2" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/o_forelock"
+                    android:id="@+id/chk_op_3" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/o_brochure"
+                    android:id="@+id/chk_op_4" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/o_newspaper"
+                    android:id="@+id/chk_op_5"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/o_ad"
+                    android:id="@+id/chk_op_6" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:layout_gravity="left|center"
+                    android:text="@string/o_activation"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black_gray"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_op_activation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/o_yes"
+                        android:checked="true"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/light_gray"
+                        android:id="@+id/radio_op_activation_yes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/o_no"
+                        android:textColor="@color/light_gray"
+                        android:id="@+id/radio_op_activation_no" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:text="@string/o_promotion_type"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black_gray"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/mySpinnerItemStyle"
+                    android:id="@+id/spn_op_type_promotion"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:layout_marginBottom="10dp"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:text="@string/o_promotional_merchandise"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black_gray"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:id="@+id/edt_op_merchandise_promotion"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:layout_gravity="left|center"
+                    android:text="@string/o_exhibit_account"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black_gray"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_op_exhibit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/o_yes"
+                        android:checked="true"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/light_gray"
+                        android:id="@+id/radio_op_exhibit_yes" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/o_no"
+                        android:textColor="@color/light_gray"
+                        android:id="@+id/radio_op_exhibit_no" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:text="@string/o_exhibit_type"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black_gray"
+                    />
+
+                <Spinner
+                    android:id              ="@+id/spn_op_type_exhibit"
+                    android:layout_width    ="match_parent"
+                    style="@style/mySpinnerItemStyle"
+                    android:layout_height   ="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:layout_marginBottom="10dp"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:text="@string/o_existence_promotion_boxes"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black_gray"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black_gray"
+                    style="@style/EditTextCustomHolo"
+                    android:id="@+id/edt_op_box_promotion"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sizeNormalText"
+                    android:text="@string/o_active_and_or_ragasa_resources"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black_gray"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/mySpinnerItemStyle"
+                    android:id="@+id/spn_op_resourse_ragasa"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="100"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:layout_weight="70"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/evidence"
+                    android:textColor="@color/black_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:weightSum="100"
+                    android:background="@color/black_gray"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_camera_op"
+                        android:layout_width="@dimen/size_photo"
+                        android:layout_height="0dp"
+                        android:layout_weight="40"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_camara"
+                        android:scaleType="fitCenter"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="@dimen/text_camera"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:text="@string/text_camera"/>
+                    <ImageView
+                        android:id="@+id/img_photo_op"
+                        android:layout_width="@dimen/size_photo"
+                        android:layout_height="0dp"
+                        android:layout_weight="40"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id                      ="@+id/lin_com_prom"
+            android:layout_width            ="match_parent"
+            android:layout_height           ="wrap_content"
+            android:gravity                 ="left|center"
+            android:layout_marginBottom     ="10dp"
+            android:orientation             ="vertical">
+
+            <LinearLayout
+                android:layout_width            ="match_parent"
+                android:layout_height           ="wrap_content"
+                android:layout_weight           ="30"
+                android:layout_marginTop        ="10dp"
+                android:layout_marginBottom     ="10dp"
+                android:weightSum               ="100"
+                android:orientation             ="horizontal">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_height       ="match_parent"
+                    android:layout_weight       ="95"
+                    android:gravity             ="bottom"
+                    android:text                ="@string/mq_competition_promotions"
+                    android:textStyle           ="bold"
+                    android:layout_marginBottom ="2dp"
+                    android:textSize            ="@dimen/sizeMediumText"
+                    android:textColor           ="@color/black_gray"/>
+
+                <ImageButton
+                    android:id              ="@+id/btn_add_rival_offer"
+                    android:layout_width    ="wrap_content"
+                    android:layout_weight   ="5"
+                    android:layout_height   ="wrap_content"
+                    android:layout_gravity  ="right|bottom"
+                    android:src             ="@drawable/ic_add_enabled"
+                    android:background      ="@color/zxing_transparent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width    ="match_parent"
+                android:layout_height   ="2dp"
+                android:background      ="@color/light_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id              ="@+id/riv_off_table_container"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:layout_margin   ="20dp"
+            android:gravity         ="center"
+            android:orientation     ="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

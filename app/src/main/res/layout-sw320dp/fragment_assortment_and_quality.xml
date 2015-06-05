@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#c3cfce"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/receipt_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/sic_indig">
+
+        <LinearLayout
+            android:id="@+id/receipt_top_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sic_indig"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_dialog_header"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sic_blue_soft"
+                android:textSize="19dp"
+                android:text="@string/receipt_number"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width            ="match_parent"
+            android:layout_height           ="wrap_content"
+            android:gravity                 ="left|center"
+            android:layout_marginBottom     ="10dp"
+            android:orientation             ="vertical"
+            android:background              ="@color/sic_indig">
+
+            <TextView
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:text                ="@string/sr_assortment_and_quality"
+                android:layout_marginBottom ="2dp"
+                android:textSize            ="@dimen/sizeMediumText"
+                android:textStyle           ="bold"
+                android:textColor           ="@color/sic_indig_soft"/>
+
+            <TextView
+                android:layout_width    ="match_parent"
+                android:layout_height   ="2dp"
+                android:background      ="@color/sic_indig"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="left|center"
+            android:weightSum       ="100"
+            android:orientation     ="horizontal"
+            android:background      ="@color/sic_indig">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeSmallText"
+                android:text                ="@string/sr_current_existence"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/sic_indig_soft"
+                />
+
+            <EditText
+                android:id              ="@+id/edt_current_existence"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="number"
+                android:layout_weight   ="60"
+                android:textColor       ="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="left|center"
+            android:weightSum       ="100"
+            android:orientation     ="horizontal"
+            android:background      ="@color/sic_indig">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeSmallText"
+                android:text                ="@string/sr_boxes_to_filling_shelf"
+                android:layout_marginRight  = "10dp"
+                android:textColor           ="@color/sic_indig_soft"
+                />
+
+            <EditText
+                android:id              ="@+id/edt_box_shelf"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="number"
+                android:layout_weight   ="80"
+                android:textColor       ="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="left|center"
+            android:weightSum       ="100"
+            android:orientation     ="horizontal"
+            android:background      ="@color/sic_indig">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeSmallText"
+                android:text                ="@string/sr_boxes_to_filling_exhibit"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/sic_indig_soft"/>
+
+            <EditText
+                android:id              ="@+id/edt_box_exhibit"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="number"
+                android:layout_weight   ="80"
+                android:textColor       ="@color/white"
+                android:nextFocusDown   ="@+id/edt_price_to_public"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="left|center"
+            android:weightSum       ="100"
+            android:orientation     ="horizontal"
+            android:background      ="@color/sic_indig">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeSmallText"
+                android:text                ="@string/sr_total_boxes"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/sic_indig_soft"/>
+
+            <EditText
+                android:id              ="@+id/edt_box_total"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="number"
+                android:layout_weight   ="60"
+                android:textColor       ="@color/white"
+                android:enabled         ="false"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="left|center"
+            android:weightSum       ="100"
+            android:orientation     ="horizontal"
+            android:background      ="@color/sic_indig">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeSmallText"
+                android:text                ="@string/sr_public_price"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/sic_indig_soft"
+                />
+
+            <EditText
+                android:id              ="@+id/edt_price_to_public"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="numberDecimal"
+                android:layout_weight   ="60"
+                android:textColor       ="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="left|center"
+            android:layout_marginBottom ="10dp"
+            android:weightSum           ="100"
+            android:orientation         ="horizontal"
+            android:background          ="@color/sic_indig">
+
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_height       ="wrap_content"
+                android:layout_weight       ="30"
+                android:textSize            ="@dimen/sizeSmallText"
+                android:text                ="@string/sr_expiry_date"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/sic_indig_soft"
+                />
+
+            <NumberPicker
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="20"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:background="@color/sic_indig"
+                android:id="@+id/np_year_start" />
+            <NumberPicker
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="20"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:background="@color/sic_indig"
+                android:id="@+id/np_month_start" />
+            <NumberPicker
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="20"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:background="@color/sic_indig"
+                android:id="@+id/np_day_start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarStyle"
+        android:orientation="horizontal"
+        android:background      ="@color/sic_indig_soft">
+
+        <Button
+            android:id="@+id/btn_add_product"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="Agregar"
+            android:textColor="@color/sic_indig"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="Cancelar"
+            android:textColor="@color/sic_indig"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

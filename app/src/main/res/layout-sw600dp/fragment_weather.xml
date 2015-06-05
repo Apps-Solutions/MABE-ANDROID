@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sic_blue_soft">
+
+    <ProgressBar
+        android:id="@+id/weather_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleLarge"/>
+
+    <LinearLayout
+        android:id="@+id/weather_error_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/weather_unavailable"/>
+
+        <ImageButton
+            android:id="@+id/refresh_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_transparent_background_square"
+            android:src="@android:drawable/ic_popup_sync"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weather_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/temp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_alignLeft="@id/max_temp_icon"
+                android:layout_alignRight="@id/min_temp_text"
+                android:gravity="center"
+                android:textSize="40sp"/>
+
+            <ImageView
+                android:id="@+id/max_temp_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp_text"
+                android:layout_alignTop="@id/max_temp_text"
+                android:layout_alignBottom="@id/max_temp_text"/>
+
+            <TextView
+                android:id="@+id/max_temp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp_text"
+                android:layout_toRightOf="@+id/max_temp_icon"
+                android:gravity="bottom"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/min_temp_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp_text"
+                android:layout_alignTop="@id/min_temp_text"
+                android:layout_alignBottom="@id/min_temp_text"
+                android:layout_toRightOf="@id/max_temp_text"/>
+
+            <TextView
+                android:id="@+id/min_temp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/min_temp_icon"
+                android:layout_below="@id/temp_text"
+                android:gravity="bottom"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/condition_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/temp_text"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/city_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/condition_text"
+                android:layout_alignBaseline="@id/temp_text"
+                android:textColor="#FFFFFF"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

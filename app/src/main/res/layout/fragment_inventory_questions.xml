@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+    android:orientation     ="vertical"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:padding         ="10dp"
+    android:background      ="@color/sic_indig">
+
+    <LinearLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:gravity         ="center|right"
+        android:orientation     ="horizontal"
+        android:background      ="@color/sic_indig">
+
+        <LinearLayout
+            android:orientation     ="horizontal"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="match_parent"
+            android:layout_weight   ="1">
+
+            <TextView
+                android:id                  ="@+id/txt_inv_product"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:layout_weight       ="1"
+                android:layout_marginBottom ="10dp"
+                android:gravity             ="center_vertical|center_horizontal"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="NUTRIOLI"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation     ="horizontal"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="match_parent"
+            android:layout_weight   ="6"
+            android:gravity         ="right">
+            <ImageButton
+                android:id                  ="@+id/btn_inv_del_product"
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:layout_marginRight  ="10dp"
+                android:src                 ="@drawable/ic_delete_enabled"
+                android:background          ="@drawable/ic_delete_enabled" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation     ="vertical"
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content">
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="left|center"
+            android:layout_weight   ="1"
+            android:orientation     ="horizontal"
+            android:background      ="@color/sic_indig">
+
+            <TextView
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeSmallText"
+                android:text                ="@string/inv_existence"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                android:layout_weight       ="1"
+                />
+
+            <EditText
+                android:id              ="@+id/et_inv_existence"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="number"
+                android:layout_weight   ="1.2"
+                style="@style/EditTextCustomHolo"
+                android:textColor       ="@color/black_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="left|center"
+            android:orientation     ="horizontal"
+            android:background      ="@color/sic_indig"
+            android:layout_weight   ="1">
+
+            <TextView
+                android:layout_width        ="match_parent"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeSmallText"
+                android:text                ="@string/inv_existence_sys"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                android:layout_weight       ="1"
+                />
+
+            <EditText
+                android:id              ="@+id/et_inv_existence_sys"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="number"
+                android:layout_weight   ="1.2"
+                style="@style/EditTextCustomHolo"
+                android:textColor       ="@color/black_gray"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:gravity         ="center_horizontal|center"
+        android:weightSum       ="100"
+        android:orientation     ="horizontal"
+        android:background      ="@color/sic_indig">
+
+        <TextView
+            android:layout_width        ="wrap_content"
+            android:layout_height       ="wrap_content"
+            android:textSize            ="@dimen/sizeSmallText"
+            android:text                ="@string/inv_difference"
+            android:layout_marginRight  ="10dp"
+            android:textColor           ="@color/black_gray"
+            />
+
+        <EditText
+            android:id              ="@+id/et_inv_difference"
+            android:layout_width    ="0dp"
+            android:layout_height   ="wrap_content"
+            android:enabled         ="false"
+            android:layout_weight   ="25"
+            style="@style/EditTextCustomHolo"
+            android:textColor       ="@color/black_gray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:gravity         ="left|center"
+        android:weightSum       ="100"
+        android:orientation     ="vertical"
+        android:background      ="@color/sic_indig">
+
+        <TextView
+            android:layout_width        ="wrap_content"
+            android:layout_height       ="wrap_content"
+            android:textSize            ="@dimen/sizeSmallText"
+            android:text                ="@string/inv_difference_comment"
+            android:layout_marginRight  ="10dp"
+            android:textColor           ="@color/black_gray"
+            />
+
+        <EditText
+            android:id              ="@+id/et_inv_difference_comment"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:textColor       ="@color/black_gray"
+            style="@style/EditTextCustomHolo"
+            android:inputType       ="textMultiLine"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width            ="match_parent"
+        android:layout_height           ="match_parent"
+        android:layout_weight           ="30"
+        android:layout_marginTop        ="10dp"
+        android:weightSum               ="100"
+        android:orientation             ="horizontal">
+
+        <Switch
+            android:id              ="@+id/swt_adjust_made"
+            android:layout_width    ="0dp"
+            android:textOff         ="NO"
+            android:textOn          ="SI"
+            android:layout_height   ="wrap_content"
+            android:text            ="@string/inv_adjust_made"
+            android:textColor       ="@color/black_gray"
+            android:layout_weight   ="90"
+            android:checked         ="false" />
+
+    </LinearLayout>
+</LinearLayout>

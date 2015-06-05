@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="match_parent"
+        android:layout_margin   ="8dp"
+        android:background      ="@color/sic_indig"
+        >
+
+        <TableRow
+            android:layout_height       ="wrap_content"
+            android:layout_width        ="match_parent"
+            android:layout_marginTop    ="10dp"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginRight  ="10dp">
+
+            <TextView
+                android:layout_weight   ="0"
+                android:textColor       ="@color/black_gray"
+                android:textStyle       ="bold"
+                android:text            ="@string/po_order_id"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+            <TextView
+                android:id              ="@+id/txt_order_id"
+                android:layout_weight   ="1"
+                android:textColor       ="@color/light_gray"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height       ="wrap_content"
+            android:layout_width        ="match_parent"
+            android:layout_marginTop    ="5dp"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginRight  ="10dp"
+            android:visibility          ="gone">
+
+            <TextView
+                android:layout_weight   ="0"
+                android:textColor       ="@color/sic_indig_soft"
+                android:textStyle       ="bold"
+                android:text            ="@string/po_subtotal"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+            <TextView
+                android:id              ="@+id/txt_order_subtotal"
+                android:layout_weight   ="1"
+                android:textColor       ="@color/light_gray"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height       ="wrap_content"
+            android:layout_width        ="match_parent"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginRight  ="10dp"
+            android:layout_marginTop    ="5dp"
+            android:visibility          ="gone">
+
+            <TextView
+                android:layout_weight   ="0"
+                android:textColor       ="@color/sic_indig_soft"
+                android:textStyle       ="bold"
+                android:text            ="@string/po_iva"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+            <TextView
+                android:id              ="@+id/txt_order_tax"
+                android:layout_weight   ="1"
+                android:textColor       ="@color/light_gray"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height       ="wrap_content"
+            android:layout_width        ="match_parent"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginRight  ="10dp"
+            android:layout_marginTop    ="5dp">
+
+            <TextView
+                android:layout_weight   ="0"
+                android:textColor       ="@color/black_gray"
+                android:textStyle       ="bold"
+                android:text            ="@string/po_total"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+            <TextView
+                android:id              ="@+id/txt_order_total"
+                android:layout_weight   ="1"
+                android:textColor       ="@color/light_gray"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height       ="wrap_content"
+            android:layout_width        ="match_parent"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginRight  ="10dp"
+            android:layout_marginTop    ="5dp">
+
+            <TextView
+                android:layout_weight   ="0"
+                android:textColor       ="@color/black_gray"
+                android:textStyle       ="bold"
+                android:text            ="@string/po_date"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+            <TextView
+                android:id              ="@+id/txt_order_date"
+                android:layout_weight   ="1"
+                android:textColor       ="@color/light_gray"
+                android:padding         ="5dip"
+                android:gravity         ="center|left"/>
+
+        </TableRow>
+
+        <TextView
+            android:layout_weight   ="0"
+            android:textColor       ="@color/black"
+            android:textStyle       ="bold"
+            android:textSize        ="22sp"
+            android:text            ="@string/sr_products"
+            android:padding         ="5dip"
+            android:gravity         ="center|left"/>
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:orientation     ="horizontal"
+            android:padding         ="10dp"
+            android:background      ="@color/sic_indig">
+
+            <LinearLayout
+                android:layout_width    ="0dp"
+                android:layout_weight   =".75"
+                android:layout_height   ="match_parent"
+                android:orientation     ="vertical"
+                android:gravity         ="center_vertical">
+
+                <TextView
+                    android:id                  ="@+id/txt_pending_order_product_name"
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeSmallText"
+                    android:textColor           ="@color/black_gray"
+                    android:singleLine          ="true"
+                    android:textStyle           ="bold"
+                    android:ellipsize           ="end"
+                    android:layout_marginLeft   ="5dp"
+                    android:text                ="@string/po_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width    ="0dp"
+                android:layout_weight   =".25"
+                android:layout_height   ="wrap_content"
+                android:layout_gravity  ="center_vertical|center_horizontal"
+                android:orientation     ="horizontal">
+
+                <TextView
+                    android:id                  ="@+id/txt_pending_order_product_quantity"
+                    android:layout_width        ="match_parent"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeSmallText"
+                    android:textColor           ="@color/black_gray"
+                    android:gravity             ="center"
+                    android:singleLine          ="true"
+                    android:textStyle           ="bold"
+                    android:ellipsize           ="end"
+                    android:layout_marginLeft   ="5dp"
+                    android:text                ="@string/po_quantity"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width    ="0dp"
+                android:layout_weight   =".25"
+                android:layout_height   ="wrap_content"
+                android:orientation     ="horizontal"
+                android:gravity         ="center_horizontal|center_horizontal">
+
+                <TextView
+                    android:id                  ="@+id/txt_pending_order_product_price"
+                    android:layout_width        ="match_parent"
+                    android:layout_height       ="wrap_content"
+                    android:textSize            ="@dimen/sizeSmallText"
+                    android:textColor           ="@color/black_gray"
+                    android:gravity             ="center"
+                    android:singleLine          ="true"
+                    android:textStyle           ="bold"
+                    android:ellipsize           ="end"
+                    android:layout_marginLeft   ="5dp"
+                    android:text                ="@string/po_price"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id              ="@+id/lst_product_order"
+            android:layout_height   ="0dp"
+            android:layout_width    ="match_parent"
+            android:layout_weight   ="1">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_height   ="wrap_content"
+            android:layout_width    ="match_parent"
+            android:padding         ="15dp"
+            android:orientation     ="horizontal">
+            <Button
+                android:id              ="@+id/btn_use_order"
+                android:layout_width    ="fill_parent"
+                android:layout_height   ="match_parent"
+                android:layout_gravity  ="center"
+                android:layout_weight   ="1"
+                android:layout_margin   ="5dp"
+                android:text            ="@string/po_edit"
+                android:background      ="@drawable/border_button_black_gray"
+                android:textColor       ="@color/sic_indig"/>
+
+            <Button
+                android:id              ="@+id/btn_cancel_order"
+                android:layout_width    ="fill_parent"
+                android:layout_height   ="match_parent"
+                android:layout_margin   ="5dp"
+                android:layout_weight   ="1"
+                android:layout_gravity  ="center"
+                android:text            ="@string/po_cancel"
+                android:background      ="@drawable/border_button_black_gray"
+                android:textColor       ="@color/sic_indig"/>
+        </LinearLayout>
+
+    </TableLayout>
+</LinearLayout>

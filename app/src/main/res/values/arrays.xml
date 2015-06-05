@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/menu0</item>
+        <item>@drawable/menu12</item>
+        <item>@drawable/menu13</item>
+        <item>@drawable/ic_liquidacion</item>
+        <item>@drawable/menu1</item>
+        <item>@drawable/menu2</item>
+        <item>@drawable/menu3</item>
+        <item>@drawable/menu4</item>
+        <item>@drawable/menu5</item>
+        <item>@drawable/menu6</item>
+        <item>@drawable/menu7</item>
+        <item>@drawable/menu8</item>
+        <item>@drawable/menu9</item>
+        <item>@drawable/menu10</item>
+        <item>@drawable/menu11</item>
+        <item>@drawable/menu13</item>
+        <item>@drawable/menu13</item>
+        <item>@drawable/icono_pedidos</item>
+    </array>
+
+    <array name="weather_icons">
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>@drawable/h_light_rain</item>
+        <item>@drawable/h_light_rain</item>
+        <item>null</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>@drawable/h_haze</item>
+        <item>@drawable/h_haze</item>
+        <item>@drawable/h_haze</item>
+        <item>@drawable/h_haze</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_sun</item>
+        <item>@drawable/h_sun</item>
+        <item>@drawable/h_sun</item>
+        <item>@drawable/h_sun</item>
+        <item>null</item>
+        <item>@drawable/h_sun</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>null</item>
+        <item>@drawable/h_heavy_rain</item>
+    </array>
+
+    <array name="evidence">
+        <item>@string/shelf</item>
+        <item>@string/product</item>
+        <item>@string/expired</item>
+        <item>@string/additional</item>
+        <item>@string/store</item>
+        <item>@string/other</item>
+    </array>
+
+    <array name="client_type">
+        <item>@string/client_type_public</item>
+        <item>@string/client_type_facturable</item>
+    </array>
+
+    <array name="fuel_type">
+        <item>@string/fuel_type_gas</item>
+        <item>@string/fuel_type_diesel</item>
+    </array>
+
+    <string-array name="sp_line">
+        <item>Linea 1</item>
+        <item>Linea 2</item>
+        <item>Linea 3</item>
+        <item>Linea 4</item>
+    </string-array>
+
+    <!--  FragmentStoreCheck ................................................................... -->
+
+    <array name="spn_position_staff">
+        <item>@string/spn_position_staff_promoter</item>
+        <item>@string/spn_position_staff_opv</item>
+        <item>@string/spn_position_staff_salesman_jr</item>
+        <item>@string/spn_position_staff_demonstratorship</item>
+    </array>
+
+    <array name="spn_staff_PDV">
+        <item>@string/spn_general_no</item>
+        <item>@string/spn_general_yes</item>
+        <item>@string/spn_general_store_unassigned</item>
+    </array>
+
+    <array name="spn_staff_registered_bitacora">
+        <item>@string/spn_general_no</item>
+        <item>@string/spn_general_yes</item>
+        <item>@string/spn_staff_registered_bitacora_not_found_staff</item>
+    </array>
+
+    <array name="spn_staff_point_of_sale">
+        <item>@string/spn_general_no</item>
+        <item>@string/spn_general_yes</item>
+        <item>@string/spn_general_store_unassigned</item>
+    </array>
+
+    <array name="spn_flow_people_store">
+        <item>@string/spn_flow_people_store_high</item>
+        <item>@string/spn_flow_people_store_medium</item>
+        <item>@string/spn_flow_people_store_low</item>
+    </array>
+
+    <array name="spn_kind_exhibition">
+        <item>@string/spn_kind_exhibition_multiple_choise</item>
+        <item>@string/spn_kind_exhibition_island</item>
+        <item>@string/spn_kind_exhibition_head</item>
+        <item>@string/spn_kind_exhibition_earring_or_nuisance</item>
+    </array>
+
+    <!--  ...................................................................................... -->
+
+</resources>

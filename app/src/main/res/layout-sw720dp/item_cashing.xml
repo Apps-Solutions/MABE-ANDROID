@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignBottom="@+id/relativeLayout1"
+            android:layout_alignParentRight="@+id/rl_image">
+
+            <TextView
+                    android:id="@+id/txv_cashingNumerico"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:text=" 00 "
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:id="@+id/relativeLayout1"
+            android:layout_toRightOf="@+id/relativelayout"
+            android:layout_toLeftOf="@+id/rl_image"
+            android:layout_toStartOf="@+id/rl_image">
+
+            <TableLayout
+                android:layout_width="458dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:text="@string/cashing_invoice"
+                        android:textSize="@dimen/dimen_text_cashing"
+                        android:textColor="@color/color_text_cashing"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="1-12345324"
+                        android:textSize="@dimen/dimen_text_cashing"
+                        android:layout_weight="1"
+                        android:id="@+id/txv_cashingFactura"
+                        android:textColor="@color/color_text_cashing"
+                        android:gravity="right" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:text="@string/cashing_client"
+                        android:textSize="@dimen/dimen_text_cashing"
+                        android:textColor="@color/color_text_cashing"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Tiendas toño S.A. de C.V."
+                        android:textSize="@dimen/dimen_text_cashing"
+                        android:layout_weight="1"
+                        android:id="@+id/txv_cashingClient"
+                        android:textColor="@color/color_text_cashing"
+                        android:gravity="right" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/color_text_cashing"
+                        android:textStyle="bold"
+                        android:text="@string/cashing_date"
+                        android:textSize="@dimen/dimen_text_cashing"
+                        />
+                    <TextView
+                        android:id="@+id/txv_cashingDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="10/01/2015"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_text_cashing"
+                        android:textSize="@dimen/dimen_text_cashing"
+                        android:gravity="right" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/color_text_cashing"
+                        android:text="@string/cashing_total"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimen_text_cashing"
+                        />
+                    <TextView
+                        android:id="@+id/txv_cashingTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="$ 30,000.00"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_text_cashing"
+                        android:gravity="right"
+                        android:textSize="@dimen/dimen_text_cashing"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_image"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_alignBottom="@+id/relativeLayout1"
+            >
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="110dp"
+                android:layout_gravity="right"
+                android:id="@+id/imv_cashingPagar"
+                android:src="@drawable/icono_pagar"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

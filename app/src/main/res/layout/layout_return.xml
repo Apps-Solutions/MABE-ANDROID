@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/customer_data_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/r_returns"
+                android:layout_marginBottom="2dp"
+                android:textSize="@dimen/sizeNormalText"
+                android:textColor="@color/wallet_holo_blue_light"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/wallet_holo_blue_light"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/r_product"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_payment_record"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/r_quantity"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_weight="40"
+                android:textColor="@color/sic_indig"
+                android:id="@+id/edt_quantity"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:layout_gravity="left|center"
+                android:text="@string/r_unit_of_measurement"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <RadioGroup
+                android:id="@+id/radio_group_measure_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/r_boxes"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/radio_measure_unit_box" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/r_bottles"
+                    android:checked="true"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/radio_measure_unit_bottles" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/r_reason"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_reason"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/r_expiry_date"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <NumberPicker
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="20"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:background="@color/gray"
+                android:id="@+id/np_year_start" />
+            <NumberPicker
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="20"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:background="@color/gray"
+                android:id="@+id/np_month_start" />
+            <NumberPicker
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="20"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:background="@color/gray"
+                android:id="@+id/np_day_start" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/r_batch"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:textColor="@color/sic_indig"
+                android:id="@+id/edt_batch"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="100"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_capture_evidence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:textSize="@dimen/sizeMediumText"
+                android:text="@string/r_capture_evidence"
+                android:padding="20dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save_return"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:textSize="@dimen/sizeMediumText"
+                android:text="@string/r_save_return"
+                android:padding="20dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

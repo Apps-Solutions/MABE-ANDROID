@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android  ="http://schemas.android.com/apk/res/android"
+    xmlns:tools             ="http://schemas.android.com/tools"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:orientation     ="vertical"
+    android:background      ="@color/sic_indig"
+    android:gravity         ="center_horizontal|center_vertical"
+    tools:context           ="com.sellcom.tracker.FragmentFueling"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/txv_last_synchronizer"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="match_parent"
+            android:gravity         ="center"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black_gray"
+            android:text            ="@string/sync_last_synchronization"
+            android:layout_gravity="center_horizontal|top" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id              = "@+id/btn_synchronize"
+            android:layout_width    = "wrap_content"
+            android:layout_height   = "wrap_content"
+            android:text            = "Sincronizar"
+            android:background="@drawable/border_button_black_gray"
+            android:layout_gravity  = "center_horizontal|center_vertical" />
+
+        <TextView
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text            ="Al sincronizar, se envía la información capturada en modo offline y se descarga la información mas reciente acerca de cobranza, plan de trabajo y pedidos en preventa"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="@color/black_gray"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

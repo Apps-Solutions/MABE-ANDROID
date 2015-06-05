@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sic_indig">
+
+
+
+    <TextView
+        android:id="@+id/txt_question_binary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Pregunta?"
+        android:textColor="@color/black_gray"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/sizeMediumText"/>
+
+    <RadioGroup
+        android:id="@+id/rgp_binary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Si"
+            android:id="@+id/rbtn_binary1"
+            android:textColor="@color/light_gray"
+            android:checked="true"
+            android:textSize="@dimen/sizeMediumText"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="No"
+            android:id="@+id/rbtn_binary2"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/sizeMediumText"
+            android:layout_gravity="center_horizontal" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray"/>
+
+
+</LinearLayout>

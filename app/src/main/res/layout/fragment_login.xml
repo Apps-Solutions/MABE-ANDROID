@@ -1,0 +1,93 @@
+<!-- amartinez@ragasa.com.mx - test-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:gravity         ="center"
+    android:orientation     ="vertical"
+    android:background      ="@color/sic_indig">
+
+    <ImageView
+        android:layout_width            ="wrap_content"
+        android:layout_height           ="wrap_content"
+        android:layout_marginBottom     ="40dp"
+        android:layout_marginRight      ="20dp"
+        android:layout_marginLeft       ="20dp"
+        android:focusable               ="true"
+        android:layout_gravity          ="center_horizontal"
+        android:focusableInTouchMode    ="true"
+        android:scaleType               ="center"
+        android:background              ="@color/app_color"
+        android:src                     ="@drawable/logo_1"/>
+
+
+        <EditText
+            android:id                          ="@+id/emailUser"
+            android:layout_width                ="match_parent"
+            android:layout_height               ="wrap_content"
+            android:hint                        ="@string/user"
+            android:textColorHint               ="@color/white"
+            android:padding                     ="5dp"
+            android:textSize                    ="@dimen/sizeMediumText"
+            android:gravity                     ="center"
+            android:layout_alignParentBottom    ="true"
+            android:layout_marginBottom         ="10dp"
+            android:layout_marginLeft           ="30dp"
+            android:layout_marginRight          ="30dp"
+            android:inputType                   ="textEmailAddress"
+            android:maxLines                    ="1"
+            android:singleLine                  ="true"
+            android:nextFocusDown               ="@+id/passwordUser"
+            android:text                        =""
+            android:background="@color/app_color"
+            />
+
+        <EditText
+            android:id                  ="@+id/passwordUser"
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="center"
+            android:layout_marginBottom ="10dp"
+            android:layout_marginLeft   ="30dp"
+            android:layout_marginRight  ="30dp"
+            android:padding             ="5dp"
+            android:textSize            ="@dimen/sizeMediumText"
+            android:hint                ="@string/password"
+            android:textColorHint       ="@color/white"
+            android:inputType           ="textPassword"
+            android:maxLines            ="1"
+            android:singleLine          ="true"
+            android:background="@color/app_color"
+            android:text                =""/>
+
+
+            <Button
+                android:id                          ="@+id/sign_in_button"
+                android:layout_width                ="wrap_content"
+                android:layout_height               ="wrap_content"
+                android:layout_gravity              ="center_horizontal"
+                android:layout_alignParentBottom    ="true"
+                android:layout_marginTop            ="20dp"
+                android:layout_marginBottom         ="30dp"
+                android:paddingTop                  ="10dp"
+                android:paddingBottom               ="10dp"
+                android:paddingLeft                 ="20dp"
+                android:paddingRight                ="20dp"
+                android:background                  ="@drawable/button_login_style"
+                android:text                        ="@string/log_in"
+                android:textSize                    ="@dimen/sizeMediumText"
+                android:textStyle                   ="bold"/>
+
+    <TextView
+        android:id                  ="@+id/version_text"
+        android:layout_width        ="match_parent"
+        android:layout_height       ="wrap_content"
+        android:layout_marginTop    ="20dp"
+        android:textSize            ="@dimen/sizeNormalText"
+        android:textStyle           ="bold"
+        android:gravity             ="center"
+        android:textColor           ="@color/sic_indig_soft"/>
+
+</LinearLayout>
+
+
+

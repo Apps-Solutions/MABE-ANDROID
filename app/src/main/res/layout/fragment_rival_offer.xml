@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android   ="http://schemas.android.com/apk/res/android"
+    android:orientation     ="vertical"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="wrap_content"
+    android:padding         ="10dp"
+    android:background      ="@color/sic_indig">
+
+
+    <LinearLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:orientation     ="vertical">
+
+        <TextView
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="center_horizontal"
+            android:textSize            ="@dimen/sizeNormalText"
+            android:text                ="OFERTAS COMPETENCIA"
+            android:layout_marginRight  ="10dp"
+            android:textColor           ="@color/white"/>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="center"
+            android:layout_marginBottom ="10dp"
+            android:orientation         ="horizontal">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="@string/cp_product"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+            <Spinner
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                style="@style/mySpinnerItemStyle"
+                android:id              ="@+id/spn_product"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="left|center"
+            android:layout_marginBottom ="10dp"
+            android:weightSum           ="100"
+            android:orientation         ="horizontal">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="@string/cp_public_price"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+            <EditText
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="numberDecimal"
+                android:layout_weight   ="60"
+                android:textColor       ="@color/black_gray"
+                style="@style/EditTextCustomHolo"
+                android:id              ="@+id/edt_price_public"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="left|center"
+            android:layout_marginBottom ="10dp"
+            android:weightSum           ="100"
+            android:orientation         ="horizontal">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="@string/cp_offer_price"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+            <EditText
+                android:id              ="@+id/edt_price_offers"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="numberDecimal"
+                android:layout_weight   ="60"
+                style="@style/EditTextCustomHolo"
+                android:textColor       ="@color/black_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="left|center"
+            android:layout_marginBottom ="10dp"
+            android:orientation         ="horizontal">
+
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_height       ="wrap_content"
+                android:layout_weight       ="60"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="@string/cp_validity_start_date"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+            <EditText
+                android:id              ="@+id/edt_rp_start_offers"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:textColor       ="@color/black_gray"
+                style="@style/EditTextCustomHolo"
+                android:inputType       ="numberDecimal"
+                android:gravity         ="center_horizontal"
+                android:layout_weight   ="40"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="left|center"
+            android:layout_marginBottom ="10dp"
+            android:orientation         ="horizontal">
+
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_height       ="wrap_content"
+                android:layout_weight       ="60"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="@string/cp_validity_end_date"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+            <EditText
+                android:id              ="@+id/edt_rp_end_offers"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:textColor       ="@color/black_gray"
+                style="@style/EditTextCustomHolo"
+                android:inputType       ="numberDecimal"
+                android:gravity         ="center_horizontal"
+                android:layout_weight   ="40"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width        ="match_parent"
+        android:layout_height       ="wrap_content"
+        android:gravity             ="left|center"
+        android:layout_marginBottom ="10dp"
+        android:orientation         ="vertical"
+        android:weightSum           ="100">
+
+        <TextView
+            android:layout_width        ="wrap_content"
+            android:layout_height       ="wrap_content"
+            android:textSize            ="@dimen/sizeNormalText"
+            android:text                ="@string/cp_grafic_material"
+            android:layout_marginRight  ="10dp"
+            android:textColor           ="@color/black_gray"
+            />
+
+        <CheckBox
+            android:layout_width    ="wrap_content"
+            android:layout_height   ="wrap_content"
+            android:text            ="@string/cp_edging"
+            android:textColor       ="@color/light_gray"
+            android:textSize        ="@dimen/sizeNormalText"
+            android:id              ="@+id/cbx1" />
+        <CheckBox
+            android:layout_width    ="wrap_content"
+            android:layout_height   ="wrap_content"
+            android:textSize        ="@dimen/sizeNormalText"
+            android:textColor       ="@color/light_gray"
+            android:text            ="@string/cp_collar"
+            android:id              ="@+id/cbx2" />
+        <CheckBox
+            android:layout_width    ="wrap_content"
+            android:layout_height   ="wrap_content"
+            android:textSize        ="@dimen/sizeNormalText"
+            android:textColor       ="@color/light_gray"
+            android:text            ="@string/cp_brochure"
+            android:id              ="@+id/cbx3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="center_vertical"
+            android:layout_marginBottom ="10dp"
+            android:orientation         ="horizontal"
+            android:weightSum           ="100">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:layout_gravity      ="left|center"
+                android:text                ="@string/cp_activation"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+            <RadioGroup
+                android:id              ="@+id/radio_group_activation"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:gravity         ="center"
+                android:orientation     ="horizontal">
+
+                <RadioButton
+                    android:id                  ="@+id/radio_activation_yes"
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="@string/cp_yes"
+                    android:checked             ="true"
+                    android:layout_marginRight  ="5dp"
+                    android:textColor           ="@color/light_gray"/>
+
+                <RadioButton
+                    android:id                  ="@+id/radio_activation_no"
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="5dp"
+                    android:text                ="@string/cp_no"
+                    android:textColor           ="@color/light_gray"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="center"
+            android:layout_marginBottom ="10dp"
+            android:orientation         ="horizontal">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="@string/cp_promotion_type"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+            <Spinner
+                android:id              ="@+id/spn_type_promotion"
+                android:layout_width    ="match_parent"
+                style="@style/mySpinnerItemStyle"
+                android:layout_height   ="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="center_vertical"
+            android:layout_marginBottom ="10dp"
+            android:orientation         ="horizontal"
+            android:weightSum           ="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:layout_gravity="left|center"
+                android:text="@string/cp_diferentiated_sku"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <RadioGroup
+                android:id="@+id/radio_group_sku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_yes"
+                    android:checked="true"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/light_gray"
+                    android:id="@+id/radio_sku_yes" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/cp_no"
+                    android:textColor="@color/light_gray"
+                    android:id="@+id/radio_sku_no" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id                  ="@+id/lyt_sku_offers"
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="left|center"
+            android:layout_marginBottom ="10dp"
+            android:weightSum           ="100"
+            android:orientation         ="horizontal">
+
+            <TextView
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:textSize            ="@dimen/sizeNormalText"
+                android:text                ="@string/cp_riv_sku"
+                android:layout_marginRight  ="10dp"
+                android:textColor           ="@color/black_gray"
+                />
+
+            <EditText
+                android:id              ="@+id/edt_sku_offers"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:inputType       ="numberDecimal"
+                android:layout_weight   ="80"
+                style="@style/EditTextCustomHolo"
+                android:textColor       ="@color/black_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/o_promotional_merchandise"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_gray"
+                style="@style/EditTextCustomHolo"
+                android:id="@+id/edt_promotional_merchandise"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:layout_gravity="left|center"
+                android:text="@string/cp_exhibit_account"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <RadioGroup
+                android:id="@+id/radio_group_exhibit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_yes"
+                    android:checked="true"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/light_gray"
+                    android:id="@+id/radio_exhibit_yes" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/cp_no"
+                    android:textColor="@color/light_gray"
+                    android:id="@+id/radio_exhibit_no" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/cp_exhibit_type"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/mySpinnerItemStyle"
+                android:id="@+id/spn_type_exhibit"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeNormalText"
+                android:text="@string/cp_promotion_existence_boxes"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_gray"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_gray"
+                style="@style/EditTextCustomHolo"
+                android:inputType="number"
+                android:id="@+id/edt_box_promotion"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="100"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_weight="70"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:textSize="@dimen/text_size"
+            android:text="@string/evidence"
+            android:textColor="@color/black_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:weightSum="100"
+            android:background="@color/black_gray"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgCamera"
+                android:layout_width="@dimen/size_photo"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_camara"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:textSize="@dimen/text_camera"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center|top"
+                android:text="@string/text_camera"/>
+            <ImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="@dimen/size_photo"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

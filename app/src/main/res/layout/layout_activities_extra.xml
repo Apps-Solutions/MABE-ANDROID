@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="100"
+    android:background="#dad8d8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sizeNormalText"
+            android:layout_gravity="left|center"
+            android:text="REALIZAR ACTIVIDADES EXTRA:"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/black"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_group_activities_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="SI"
+                android:checked="true"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/radio_activities_extra_yes" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:layout_marginLeft="5dp"
+                android:text="NO"
+                android:textColor="@android:color/black"
+                android:id="@+id/radio_activities_extra_no" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="left|center"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:textSize="@dimen/sizeNormalText"
+            android:text="INICIO DE ACTIVIDADES:"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            />
+
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="20"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:background="@color/gray"
+            android:id="@+id/np_year_start" />
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="20"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:background="@color/gray"
+            android:id="@+id/np_month_start" />
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="20"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:background="@color/gray"
+            android:id="@+id/np_day_start" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="left|center"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:textSize="@dimen/sizeNormalText"
+            android:text="FIN DE ACTIVIDADES:"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            />
+
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="20"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:background="@color/gray"
+            android:id="@+id/np_year_end" />
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="20"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:background="@color/gray"
+            android:id="@+id/np_month_end" />
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="20"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:background="@color/gray"
+            android:id="@+id/np_day_end" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:gravity="left|center"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sizeNormalText"
+            android:text="COMENTARIO JEFE DE ABARROTES:"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_commodity_promotion"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:gravity="left"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sizeNormalText"
+            android:text="FIRMA DE JEFE DE ABARROTES:"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sizeNormalText"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:text="FIRMA"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation     ="vertical"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:background      ="@color/sic_indig">
+
+    <LinearLayout
+        android:orientation     ="horizontal"
+        android:layout_width    ="fill_parent"
+        android:layout_height   ="wrap_content">
+        <TextView
+            android:id              ="@+id/txt_whp_title"
+            android:layout_width    ="fill_parent"
+            android:layout_height   ="wrap_content"
+            android:textAppearance  ="?android:attr/textAppearanceMedium"
+            android:text            ="@string/whp_title"
+            android:textColor       ="@color/black_gray"
+            android:paddingLeft     ="20dp"
+            android:paddingTop      ="5dp"
+            android:paddingBottom   ="10dp"
+            android:layout_weight   ="1" />
+
+        <ImageButton
+            android:id              ="@+id/btn_whp_add"
+            android:layout_width    ="wrap_content"
+            android:layout_height       ="wrap_content"
+            android:layout_gravity      ="right"
+            android:layout_marginRight  ="10dp"
+            android:src             ="@drawable/ic_add_enabled"
+            android:background      ="@color/zxing_transparent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation     ="vertical"
+        android:layout_width    ="match_parent"
+        android:layout_height   ="2dp"
+        android:background      ="@color/light_gray"
+        android:layout_gravity  ="center_horizontal" />
+
+    <LinearLayout
+        android:orientation     ="horizontal"
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:layout_gravity  ="center_horizontal"
+        android:paddingLeft     ="10dp"
+        android:paddingRight    ="10dp">
+
+        <TextView
+            android:id              ="@+id/txt_whp_brand"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="match_parent"
+            android:textSize        ="@dimen/sizeSmallText"
+            android:text            ="@string/whp_brand"
+            android:layout_weight   ="2"
+            android:gravity         ="center_vertical"
+            android:textColor       ="@color/black_gray" />
+
+        <Spinner
+            android:id              ="@+id/spn_whp_brand"
+            android:layout_width    ="fill_parent"
+            style="@style/mySpinnerItemStyle"
+            android:layout_height   ="match_parent"
+            android:layout_weight   ="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation     ="horizontal"
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:layout_gravity  ="center_horizontal"
+        android:paddingLeft     ="10dp"
+        android:paddingRight    ="10dp">
+
+        <TextView
+            android:id              ="@+id/txt_whp_product"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="match_parent"
+            android:textSize        ="@dimen/sizeSmallText"
+            android:text            ="@string/whp_product"
+            android:layout_weight   ="2"
+            android:gravity         ="center_vertical"
+            android:textColor       ="@color/black_gray" />
+
+        <Spinner
+            android:id              ="@+id/spn_whp_product"
+            android:layout_width    ="fill_parent"
+            style="@style/mySpinnerItemStyle"
+            android:layout_height   ="match_parent"
+            android:layout_weight   ="1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id                  ="@+id/lst_products_added"
+        android:layout_width        ="match_parent"
+        android:layout_height       ="0dp"
+        android:layout_weight       ="1"
+        android:divider="@color/light_gray"
+        android:layout_marginBottom ="10dp">
+    </ListView>
+
+    <LinearLayout
+        android:orientation     ="vertical"
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:layout_gravity  ="center_horizontal"
+        android:gravity         ="fill_horizontal|center_horizontal"
+        android:padding         ="10dp">
+
+        <TextView
+            android:layout_width    ="wrap_content"
+            android:layout_height   ="wrap_content"
+            android:textSize        ="@dimen/sizeSmallText"
+            android:text            ="@string/whp_chief_comment"
+            android:layout_gravity  ="center_vertical"
+            android:textColor       ="@color/black_gray" />
+
+        <EditText
+            android:id              ="@+id/edt_whp_chief_comment"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:autoText        ="true"
+            android:gravity         ="center_vertical|center_horizontal"
+            android:inputType       ="text"
+            android:textSize        ="@dimen/sizeSmallText"
+            style="@style/EditTextCustomHolo"
+            android:textColor       ="@color/black_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation     ="vertical"
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:layout_gravity  ="center_horizontal"
+        android:gravity         ="fill_horizontal|center_horizontal"
+        android:padding         ="10dp"
+        >
+
+        <TextView
+            android:id             ="@+id/tv_whp_chief_signature"
+            android:layout_width   ="wrap_content"
+            android:layout_height  ="wrap_content"
+            android:textSize       ="@dimen/sizeSmallText"
+            android:text           ="@string/whp_chief_signature"
+            android:layout_gravity ="center_vertical"
+            android:textColor      ="@color/black_gray" />
+
+        <FrameLayout
+            android:id="@+id/signature_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_weight="50"
+            android:padding="@dimen/activity_vertical_margin"
+
+            android:background="@drawable/border_general_edittext">
+            <TextView
+                android:id="@+id/txv_signature_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signature_hint"
+                android:textSize="@dimen/sizeLargeText"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/img_signature"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

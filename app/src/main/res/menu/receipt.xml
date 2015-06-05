@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/save_product"
+        android:title="Guardar"
+        android:icon="@drawable/ic_accept_enabled"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/print_receipt"
+        android:title="Imprimir"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/discard"
+        android:title="Cancelar"
+        android:icon="@drawable/ic_cancel_enabled"
+        app:showAsAction="ifRoom" />
+
+</menu>

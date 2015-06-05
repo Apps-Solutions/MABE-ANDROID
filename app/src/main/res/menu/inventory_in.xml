@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/save_changes"
+        android:title="Guardar"
+        android:icon="@drawable/ic_accept_enabled"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/delete_product"
+        android:title="Borrar producto"
+        android:icon="@drawable/ic_delete_enabled"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/add"
+        android:title="Agregar producto"
+        android:icon="@drawable/ic_add_enabled"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation     ="horizontal"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:padding         ="2dp"
+    android:background      ="@color/white">
+
+
+    <LinearLayout
+        android:orientation     ="horizontal"
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:background      ="@color/light_gray">
+
+        <LinearLayout
+            android:orientation     ="vertical"
+            android:layout_width    ="wrap_content"
+            android:layout_height   ="match_parent"
+            android:layout_gravity  ="center">
+
+            <TextView
+                    android:id                  ="@+id/txv_cashingNumerico"
+                    android:layout_width        ="36dp"
+                    android:layout_height       ="match_parent"
+                    android:gravity             ="center"
+                    android:text                =" 00 "
+                    android:textStyle           ="bold"
+                    android:textSize            ="18dp"
+                    android:layout_marginRight  ="5dp"
+                    android:textColor           ="@color/black_gray"
+                    android:background          ="@color/sic_indig"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation     ="vertical"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:background      ="@color/sic_indig">
+
+            <LinearLayout
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:orientation     ="horizontal">
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="5dp"
+                    android:layout_marginRight  ="5dp"
+                    android:textStyle           ="bold"
+                    android:gravity             ="left"
+                    android:text                ="@string/cashing_invoice"
+                    android:textColor           ="@color/black_gray"
+                 />
+                <TextView
+                    android:id                  ="@+id/txv_cashingFactura"
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="5dp"
+                    android:layout_marginRight  ="5dp"
+                    android:text                ="1-12345324"
+                    android:textColor           ="@color/light_gray"
+                    android:gravity             ="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:orientation     ="horizontal">
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="5dp"
+                    android:layout_marginRight  ="5dp"
+                    android:textStyle           ="bold"
+                    android:layout_gravity      ="left"
+                    android:text                ="@string/cashing_client"
+                    android:textColor           ="@color/black_gray"
+                    />
+                <TextView
+                    android:id                  ="@+id/txv_cashingClient"
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="5dp"
+                    android:layout_marginRight  ="5dp"
+                    android:text                ="Tiendas toño S.A. de C.V."
+                    android:textColor           ="@color/light_gray"
+                    android:gravity             ="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:orientation     ="horizontal">
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="5dp"
+                    android:layout_marginRight  ="5dp"
+                    android:textColor           ="@color/black_gray"
+                    android:textStyle           ="bold"
+                    android:text                ="@string/cashing_date"/>
+                <TextView
+                    android:id                  ="@+id/txv_cashingDate"
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="5dp"
+                    android:layout_marginRight  ="5dp"
+                    android:text                ="10/01/2015"
+                    android:layout_weight       ="1"
+                    android:textColor           ="@color/light_gray"
+                    android:gravity             ="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width    ="match_parent"
+                android:layout_height   ="wrap_content"
+                android:orientation     ="horizontal">
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="5dp"
+                    android:layout_marginRight  ="5dp"
+                    android:textColor           ="@color/black_gray"
+                    android:text                ="@string/cashing_total"
+                    android:textStyle           ="bold"
+                    />
+                <TextView
+                    android:id                  ="@+id/txv_cashingTotal"
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="5dp"
+                    android:layout_marginRight  ="5dp"
+                    android:text                ="$ 30,000.00"
+                    android:layout_weight       ="1"
+                    android:textColor           ="@color/light_gray"
+                    android:gravity             ="right" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

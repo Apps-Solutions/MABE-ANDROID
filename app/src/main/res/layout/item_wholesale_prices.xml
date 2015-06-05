@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation     ="horizontal"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="wrap_content"
+    android:layout_gravity  ="center_horizontal"
+    android:gravity         ="center_vertical|center_horizontal"
+    android:padding         ="5dp"
+    android:background      ="@color/sic_indig">
+
+    <TextView
+        android:id              ="@+id/txt_whp_product_name"
+        android:layout_width    ="0dp"
+        android:layout_weight   ="1.1"
+        android:layout_height   ="wrap_content"
+        android:textSize        ="@dimen/sizeSmallText"
+        android:text            ="@string/whp_price"
+        android:layout_gravity  ="center_vertical"
+        android:textColor       ="@color/black_gray" />
+
+    <EditText
+        android:id                  ="@+id/edt_whp_price"
+        android:layout_width        ="0dp"
+        android:layout_weight       =".4"
+        android:layout_height       ="wrap_content"
+        android:layout_marginLeft   ="10dp"
+        android:textSize            ="@dimen/sizeSmallText"
+        android:hint                ="@string/whp_price"
+        android:textColorHint="@color/light_gray"
+        android:gravity             ="center_vertical"
+        style="@style/EditTextCustomHolo"
+        android:textColor           ="@color/black_gray"
+        android:inputType           ="number|numberDecimal" />
+
+    <Button
+        android:id              ="@+id/edt_whp_delete"
+        android:padding         ="5dp"
+        android:layout_width    ="0dp"
+        android:layout_weight   =".2"
+        android:layout_height   ="match_parent"
+        android:layout_marginLeft="10dp"
+        android:autoText        ="true"
+        android:gravity         ="center_vertical|center_horizontal"
+        android:background      ="@color/black_gray"
+        android:textColor       ="@color/white"
+        android:text            ="-"
+        android:inputType       ="number|numberDecimal" />
+</LinearLayout>

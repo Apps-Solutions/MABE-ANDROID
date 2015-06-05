@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation     ="horizontal"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="wrap_content"
+    android:paddingTop      ="5dp"
+    android:background      ="@color/white">
+
+
+
+    <ImageButton
+        android:id              ="@+id/delete_button"
+        android:layout_width    ="wrap_content"
+        android:layout_height   ="match_parent"
+        android:visibility      ="gone"
+        android:background      ="@drawable/button_delete_list_item"
+        android:src             ="@drawable/ic_action_cancel"/>
+
+    <LinearLayout
+        android:layout_width    ="fill_parent"
+        android:layout_height   ="wrap_content"
+        android:layout_gravity  ="center_vertical"
+        android:orientation     ="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray"/>
+
+        <TextView
+            android:id                  ="@+id/txt_product_name"
+            android:layout_width        ="wrap_content"
+            android:layout_height       ="wrap_content"
+            android:layout_marginLeft   ="10dp"
+            android:layout_gravity      ="center"
+            android:textColor           ="@color/black_gray"
+            android:textSize            ="@dimen/sizeSemiLargeText"/>
+        <LinearLayout
+            android:layout_width        ="wrap_content"
+            android:layout_height       ="wrap_content"
+            android:layout_marginLeft   ="10dp"
+            android:layout_marginBottom ="5dp"
+            android:layout_gravity      ="right"
+            android:orientation         ="horizontal">
+
+            <TextView
+                android:layout_width    ="wrap_content"
+                android:layout_height   ="wrap_content"
+                android:textColor       ="@color/black_gray"
+                android:textSize        ="@dimen/sizeMediumText"
+                android:text            ="@string/product_price_indicator"
+                android:gravity         ="center"/>
+
+            <TextView
+                android:id                  ="@+id/txt_product_price"
+                android:layout_width        ="wrap_content"
+                android:layout_height       ="wrap_content"
+                android:layout_marginLeft   ="3dp"
+                android:layout_gravity      ="center_vertical"
+                android:textColor           ="@color/black_gray"
+                android:textSize            ="@dimen/sizeMediumText"
+                android:gravity             ="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:orientation         ="horizontal">
+
+            <LinearLayout
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:layout_gravity      ="right"
+                android:layout_marginLeft   ="10dp"
+                android:orientation         ="horizontal">
+
+                <EditText
+                    android:id              ="@+id/edt_product_boxes"
+                    android:layout_width    ="35dp"
+                    android:layout_height   ="wrap_content"
+                    android:background      ="@drawable/border_general_edittext"
+                    android:textColor       ="@color/black_gray"
+                    android:textSize        ="@dimen/sizeMediumText"
+                    android:imeOptions      ="actionDone"
+                    android:inputType       ="number"
+                    android:textColorHint   ="@color/light_gray"
+                    android:hint            ="0"
+                    android:gravity         ="center"/>
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="3dp"
+                    android:layout_gravity      ="center_vertical"
+                    android:textColor           ="@color/black_gray"
+                    android:textSize            ="@dimen/sizeMediumText"
+                    android:text                ="@string/product_boxes_lbl"
+                    android:gravity             ="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width            ="0dp"
+                android:layout_weight           ="1"
+                android:layout_height           ="wrap_content"
+                android:layout_marginBottom     ="10dp"
+                android:layout_gravity          ="right"
+                android:orientation             ="horizontal">
+
+                <EditText
+                    android:id              ="@+id/edt_product_pieces"
+                    android:layout_width    ="35dp"
+                    android:layout_height   ="wrap_content"
+                    android:background      ="@drawable/border_general_edittext"
+                    android:textColor       ="@color/black_gray"
+                    android:textSize        ="@dimen/sizeMediumText"
+                    android:textColorHint   ="@color/light_gray"
+                    android:imeOptions      ="actionDone"
+                    android:inputType       ="number"
+                    android:hint            ="0"
+                    android:gravity         ="center"/>
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="3dp"
+                    android:layout_gravity      ="center_vertical"
+                    android:textColor           ="@color/black_gray"
+                    android:textSize            ="@dimen/sizeMediumText"
+                    android:text                ="@string/product_pieces_lbl"
+                    android:gravity             ="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center_horizontal"
+                android:orientation         ="horizontal">
+
+                <EditText
+                    android:id              ="@+id/edt_product_total"
+                    android:layout_width    ="35dp"
+                    android:layout_height   ="wrap_content"
+                    android:background      ="@drawable/border_general_edittext"
+                    android:textColor       ="@color/black_gray"
+                    android:textSize        ="@dimen/sizeMediumText"
+                    android:textColorHint   ="@color/light_gray"
+                    android:inputType       ="number"
+                    android:text            ="0"
+                    android:enabled         ="false"
+                    android:gravity         ="center"/>
+
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_height       ="wrap_content"
+                    android:layout_marginLeft   ="3dp"
+                    android:layout_gravity      ="center_vertical"
+                    android:textColor           ="@color/black_gray"
+                    android:textSize            ="@dimen/sizeMediumText"
+                    android:text                ="@string/product_total_lbl"
+                    android:gravity             ="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
