@@ -16,7 +16,7 @@
         android:layout_gravity          ="center_horizontal"
         android:focusableInTouchMode    ="true"
         android:scaleType               ="centerInside"
-        android:src                     ="@drawable/preventa_logo"/>
+        android:src                     ="@drawable/mabe_logo"/>
 
         <EditText
             android:id                          ="@+id/emailUser"

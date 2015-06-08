@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App Name -->
-    <string name="app_name">Preventa Sellcom</string>
+    <string name="app_name">Mabe</string>
 
     <!-- String for navigation drawer -->
     <string name="drawer_wellcome">User</string>

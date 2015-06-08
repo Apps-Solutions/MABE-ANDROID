@@ -54,7 +54,10 @@ public class RequestManager implements ResponseListenerInterface {
     //public  final   String 	                                API_URL 	       = "http://54.187.219.128/ragasa/dev/api.php";
 
     // PREVENTA
-    public  final  String                                   API_URL            = "http://54.187.219.128/preventa/api.php";
+    //public  final  String                                   API_URL            = "http://54.187.219.128/preventa/api.php";
+
+    // MABE
+    public  final  String                                   API_URL           = "http://54.187.219.128/mabe/api.php";
 
     // PROD
     //public  final   String 	                                API_URL 	       = "http://54.187.193.46/sicmobile/api.php";

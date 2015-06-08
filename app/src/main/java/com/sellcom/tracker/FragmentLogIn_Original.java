@@ -73,8 +73,8 @@ public class FragmentLogIn_Original extends Fragment implements View.OnClickList
             versionText = (TextView) view.findViewById(R.id.version_text);
 
             if (TEST){
-                usuario.setText("DFLC02@correo.com");
-                pass.setText("demo");
+                usuario.setText("demo@mabe.com");
+                pass.setText("demo1");
             }
 
             ingresar.setOnClickListener(this);

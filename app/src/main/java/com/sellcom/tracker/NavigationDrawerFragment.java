@@ -276,7 +276,7 @@ public class NavigationDrawerFragment extends Fragment {
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setTitle(R.string.app_name);
-        actionBar.setIcon(R.drawable.ic_preventa);
+        actionBar.setIcon(R.drawable.mabe_logo);
     }
 
     private ActionBar getActionBar() {
