@@ -5,109 +5,302 @@
     android:layout_height="match_parent">
 
 
-    <TableLayout
+
+    <LinearLayout
         android:layout_width    ="match_parent"
         android:layout_height   ="match_parent"
         android:background      ="@color/sic_indig"
+        android:orientation="vertical"
+        android:weightSum="100"
         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="vertical">
 
-        <TableRow
-            android:layout_height       ="wrap_content"
-            android:layout_width        ="match_parent"
-            android:layout_marginTop    ="10dp"
-            android:layout_marginLeft   ="10dp"
-            android:layout_marginRight  ="10dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:layout_weight   ="0"
-                android:textColor       ="@color/black_gray"
-                android:textStyle       ="bold"
-                android:text            ="@string/wp_customer"
-                android:padding         ="5dip"
-                android:gravity         ="center|left"/>
-            <TextView
-                android:id              ="@+id/txt_pdv_name"
-                android:layout_weight   ="1"
-                android:textColor       ="@color/light_gray"
-                android:padding         ="5dip"
-                android:gravity         ="center|left"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_height       ="wrap_content"
+                        android:layout_width        ="match_parent"
+                        android:layout_marginTop    ="10dp"
+                        android:layout_marginLeft   ="10dp"
+                        android:layout_marginRight  ="10dp"
+                        android:weightSum="100"
+                        android:orientation="horizontal">
 
-        </TableRow>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="40"
+                            android:textColor       ="@color/black_gray"
+                            android:textStyle       ="bold"
+                            android:text            ="@string/wp_customer"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"
+                            android:layout_width="0dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id              ="@+id/txt_pdv_name"
+                            android:layout_weight   ="60"
+                            android:textColor       ="@color/light_gray"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
 
-        <TableRow
-            android:layout_height       ="wrap_content"
-            android:layout_width        ="match_parent"
-            android:layout_marginTop    ="10dp"
-            android:layout_marginLeft   ="10dp"
-            android:layout_marginRight  ="10dp">
+                    </LinearLayout>
 
-            <TextView
-                android:layout_weight   ="0"
-                android:textColor       ="@color/black_gray"
-                android:textStyle       ="bold"
-                android:text            ="@string/wp_jde_code"
-                android:padding         ="5dip"
-                android:gravity         ="center|left"/>
-            <TextView
-                android:id              ="@+id/txt_pdv_jde"
-                android:layout_weight   ="1"
-                android:textColor       ="@color/light_gray"
-                android:padding         ="5dip"
-                android:gravity         ="center|left"/>
+                    <LinearLayout
+                        android:layout_height       ="wrap_content"
+                        android:layout_width        ="match_parent"
+                        android:layout_marginTop    ="10dp"
+                        android:layout_marginLeft   ="10dp"
+                        android:layout_marginRight  ="10dp"
+                        android:weightSum="100"
+                        android:orientation="horizontal">
 
-        </TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="40"
+                            android:textColor       ="@color/black_gray"
+                            android:textStyle       ="bold"
+                            android:text            ="@string/wp_jde_code"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id              ="@+id/txt_pdv_jde"
+                            android:layout_weight   ="60"
+                            android:textColor       ="@color/light_gray"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
 
-        <TableRow
-            android:layout_height       ="wrap_content"
-            android:layout_width        ="match_parent"
-            android:layout_marginLeft   ="10dp"
-            android:layout_marginRight  ="10dp"
-            android:layout_marginTop    ="5dp">
+                    </LinearLayout>
 
-            <TextView
-                android:id              ="@+id/tv_address"
-                android:layout_weight   ="0"
-                android:textColor       ="@color/black_gray"
-                android:textStyle       ="bold"
-                android:text            ="@string/wp_address"
-                android:padding         ="5dip"
-                android:gravity         ="center|left"/>
-            <TextView
-                android:id              ="@+id/txt_pdv_address"
-                android:layout_weight   ="1"
-                android:textColor       ="@color/light_gray"
-                android:padding         ="5dip"
-                android:gravity         ="center|left"/>
+                    <LinearLayout
+                        android:layout_height       ="wrap_content"
+                        android:layout_width        ="match_parent"
+                        android:layout_marginLeft   ="10dp"
+                        android:layout_marginRight  ="10dp"
+                        android:layout_marginTop    ="5dp"
+                        android:weightSum="100"
+                        android:orientation="horizontal">
 
-        </TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="40"
+                            android:textColor       ="@color/black_gray"
+                            android:textStyle       ="bold"
+                            android:text            ="ITEM"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="60"
+                            android:textColor       ="@color/light_gray"
+                            android:padding         ="5dip"
+                            android:text="ITEM"
+                            android:gravity         ="center|left"/>
 
-        <TableRow
-            android:layout_height       ="wrap_content"
-            android:layout_width        ="match_parent"
-            android:layout_marginLeft   ="10dp"
-            android:layout_marginRight  ="10dp"
-            android:layout_marginTop    ="5dp">
+                    </LinearLayout>
 
-            <TextView
-                android:id              ="@+id/tv_telephone"
-                android:layout_weight   ="0"
-                android:textColor       ="@color/black_gray"
-                android:textStyle       ="bold"
-                android:text            ="@string/wp_telephone"
-                android:padding         ="5dip"
-                android:gravity         ="center|left"/>
-            <TextView
-                android:id              ="@+id/txt_pdv_phone_number"
-                android:layout_weight   ="1"
-                android:textColor       ="@color/light_gray"
-                android:padding         ="5dip"
-                android:gravity         ="center|left"/>
+                    <LinearLayout
+                        android:layout_height       ="wrap_content"
+                        android:layout_width        ="match_parent"
+                        android:layout_marginLeft   ="10dp"
+                        android:layout_marginRight  ="10dp"
+                        android:layout_marginTop    ="5dp"
+                        android:weightSum="100"
+                        android:orientation="horizontal">
 
-        </TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="40"
+                            android:textColor       ="@color/black_gray"
+                            android:textStyle       ="bold"
+                            android:text            ="Tipo de orden"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="60"
+                            android:textColor       ="@color/light_gray"
+                            android:padding         ="5dip"
+                            android:text="Orden 5"
+                            android:gravity         ="center|left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height       ="wrap_content"
+                        android:layout_width        ="match_parent"
+                        android:layout_marginLeft   ="10dp"
+                        android:layout_marginRight  ="10dp"
+                        android:layout_marginTop    ="5dp"
+                        android:weightSum="100"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="40"
+                            android:textColor       ="@color/black_gray"
+                            android:textStyle       ="bold"
+                            android:text            ="Modelo del producto"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="60"
+                            android:textColor       ="@color/light_gray"
+                            android:padding         ="5dip"
+                            android:text="RME1436XUNB"
+                            android:gravity         ="center|left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height       ="wrap_content"
+                        android:layout_width        ="match_parent"
+                        android:layout_marginLeft   ="10dp"
+                        android:layout_marginRight  ="10dp"
+                        android:layout_marginTop    ="5dp"
+                        android:weightSum="100"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="40"
+                            android:textColor       ="@color/black_gray"
+                            android:textStyle       ="bold"
+                            android:text            ="Descripción de la falla"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="60"
+                            android:textColor       ="@color/light_gray"
+                            android:padding         ="5dip"
+                            android:text="Falla al enfriar, motor dañado"
+                            android:gravity         ="center|left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height       ="wrap_content"
+                        android:layout_width        ="match_parent"
+                        android:layout_marginLeft   ="10dp"
+                        android:layout_marginRight  ="10dp"
+                        android:layout_marginTop    ="5dp"
+                        android:weightSum="100"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="40"
+                            android:textColor       ="@color/black_gray"
+                            android:textStyle       ="bold"
+                            android:text            ="Observaciones"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight   ="60"
+                            android:textColor       ="@color/light_gray"
+                            android:padding         ="5dip"
+                            android:text="El modelo es viejo"
+                            android:gravity         ="center|left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height       ="wrap_content"
+                        android:layout_width        ="match_parent"
+                        android:layout_marginLeft   ="10dp"
+                        android:layout_marginRight  ="10dp"
+                        android:layout_marginTop    ="5dp"
+                        android:weightSum="100"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id              ="@+id/tv_address"
+                            android:layout_weight   ="40"
+                            android:textColor       ="@color/black_gray"
+                            android:textStyle       ="bold"
+                            android:text            ="@string/wp_address"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id              ="@+id/txt_pdv_address"
+                            android:layout_weight   ="60"
+                            android:textColor       ="@color/light_gray"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height       ="wrap_content"
+                        android:layout_width        ="match_parent"
+                        android:layout_marginLeft   ="10dp"
+                        android:layout_marginRight  ="10dp"
+                        android:layout_marginTop    ="5dp"
+                        android:weightSum="100"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id              ="@+id/tv_telephone"
+                            android:layout_weight   ="40"
+                            android:textColor       ="@color/black_gray"
+                            android:textStyle       ="bold"
+                            android:text            ="@string/wp_telephone"
+                            android:padding         ="5dip"
+                            android:gravity         ="center|left"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id              ="@+id/txt_pdv_phone_number"
+                            android:layout_weight   ="60"
+                            android:textColor       ="@color/light_gray"
+                            android:padding         ="5dip"
+                            android:text="5554356767"
+                            android:gravity         ="center|left"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
 
         <RelativeLayout
-            android:layout_height   ="match_parent"
-            android:layout_width    ="match_parent">
+            android:layout_height   ="0dp"
+            android:layout_width    ="match_parent"
+            android:layout_weight="50">
 
             <FrameLayout
                 android:id                  ="@+id/mapview"
@@ -119,7 +312,7 @@
                 android:layout_marginRight  ="5dp"
                 android:layout_above        ="@+id/tableRow"/>
 
-            <TableRow
+            <LinearLayout
                 android:layout_height               ="wrap_content"
                 android:layout_width                ="fill_parent"
                 android:gravity                     ="center"
@@ -130,7 +323,8 @@
                 android:layout_marginLeft           ="8dp"
                 android:layout_marginBottom         ="8dp"
                 android:layout_marginRight          ="8dp"
-                android:id                          ="@+id/tableRow">
+                android:id                          ="@+id/tableRow"
+                android:orientation="horizontal">
 
 
                 <Button
@@ -152,8 +346,8 @@
                     android:background      ="@color/black_gray"
                     android:textColor       ="@color/sic_indig"
                     android:id              ="@+id/workP_buttonReagendar" />
-            </TableRow>
+            </LinearLayout>
         </RelativeLayout>
 
-    </TableLayout>
+    </LinearLayout>
 </LinearLayout>

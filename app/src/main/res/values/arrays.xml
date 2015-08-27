@@ -138,6 +138,32 @@
         <item>@string/spn_kind_exhibition_earring_or_nuisance</item>
     </array>
 
+    <array name="spn_fallas">
+        <item>@string/falla_electrica</item>
+        <item>@string/falla_enfriamiento</item>
+        <item>@string/falla_compresor</item>
+        <item>@string/falla_lavado</item>
+        <item>@string/falla_motor</item>
+        <item>@string/falla_x</item>
+        <item>@string/falla_y</item>
+        <item>@string/falla_z</item>
+    </array>
+
+    <array name="spn_servicio">
+        <item>@string/garatia</item>
+        <item>@string/contrato</item>
+        <item>@string/cargo</item>
+        <item>@string/milenia</item>
+    </array>
+
+
+    <array name="spn_status">
+        <item>@string/reagendado1</item>
+        <item>@string/proceso</item>
+        <item>@string/terminado</item>
+        <item>@string/no_localizado</item>
+    </array>
+
     <!--  ...................................................................................... -->
 
 </resources>

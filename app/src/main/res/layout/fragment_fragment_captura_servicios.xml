@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width        ="match_parent"
+        android:layout_height       ="wrap_content"
+        android:layout_marginTop    ="20dp"
+        android:text                ="Número de serie del producto actual"
+        android:textColor           ="@color/black_gray"
+        android:textSize            ="@dimen/sizeMediumText"/>
+
+    <EditText
+        android:id="@+id/num_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Ingresar número"/>
+
+
+    <TextView
+    android:layout_width        ="match_parent"
+    android:layout_height       ="wrap_content"
+    android:layout_marginTop    ="30dp"
+    android:text                ="Modelo del producto"
+    android:textColor           ="@color/black_gray"
+    android:textSize            ="@dimen/sizeMediumText"/>
+
+    <EditText
+        android:id="@+id/modelo_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Ingresar modelo"/>
+
+    <TextView
+        android:layout_width        ="match_parent"
+        android:layout_height       ="wrap_content"
+        android:layout_marginTop    ="30dp"
+        android:text                ="Fecha de compra del producto"
+        android:textColor           ="@color/black_gray"
+        android:textSize            ="@dimen/sizeMediumText"/>
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_marginTop="10dp"
+        android:calendarViewShown="false"
+        android:layout_gravity="center_horizontal" />
+    <!--
+        <EditText
+            android:id="@+id/fecha_compra_producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Ingresar fecha"/>
+    -->
+
+</LinearLayout>

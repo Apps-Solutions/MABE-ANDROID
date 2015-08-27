@@ -9,7 +9,6 @@
     <ImageView
         android:layout_width            ="wrap_content"
         android:layout_height           ="wrap_content"
-        android:layout_marginBottom     ="40dp"
         android:layout_marginRight      ="20dp"
         android:layout_marginLeft       ="20dp"
         android:focusable               ="true"
@@ -17,6 +16,17 @@
         android:focusableInTouchMode    ="true"
         android:scaleType               ="centerInside"
         android:src                     ="@drawable/mabe_logo"/>
+
+    <TextView
+        android:layout_width            ="match_parent"
+        android:layout_height           ="wrap_content"
+        android:text                    ="SERVIPLUS"
+        android:layout_marginBottom     ="30dp"
+        android:gravity                 ="center"
+        android:typeface                ="normal"
+        android:textColor               ="@color/azul_mabe"
+        android:textStyle               ="bold"
+        android:textSize                ="@dimen/sizeLargeText"/>
 
         <EditText
             android:id                          ="@+id/emailUser"

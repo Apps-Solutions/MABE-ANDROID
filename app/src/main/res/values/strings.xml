@@ -164,14 +164,14 @@
     </string-array>
     <string-array name="drawer_titles">
         <item>Home</item>
-        <item>Work Plan</item>
+        <item>Service Plan</item>
         <item>Synchronize</item>
         <item>Payments</item>
         <item>Forms</item>
         <item>Visits</item>
-        <item>Orders</item>
+        <item>Spare Parts</item>
         <item>Inventory</item>
-        <item>Add Prospect Customer</item>
+        <item>Add Customer Data</item>
         <item>Location</item>
         <item>Products</item>
         <item>Surveys</item>
@@ -237,22 +237,22 @@
     <!-- Steps Visit / Pasos de la Visita -->
     <string name="preparation">Preparation For The Visit</string>
     <string name="capturing_inventories">Capturing Inventories</string>
-    <string name="order">Order</string>
-    <string name="payment_record">Payment Record</string>
+    <string name="order">Service Order</string>
+    <string name="payment_record">Payments</string>
     <string name="order_cancellation">Order Cancellation</string>
-    <string name="refund">Refund</string>
-    <string name="refund_cancellation">Refund Cancelation</string>
+    <string name="refund">Part Change</string>
+    <string name="refund_cancellation">Part Change Cancellation</string>
     <string name="return_order">Return</string>
     <string name="not_sale">Not Sale</string>
-    <string name="authorize_visit">Authorize Exit</string>
-    <string name="end_visit">End Visit</string>
+    <string name="authorize_visit">Authorize End Service</string>
+    <string name="end_visit">Closure Order</string>
     <string name="pre_orders">Pre-orders</string>
     <string name="historic_orders">Orders Historical</string>
     <string name="extra_tasks">Generic Tasks</string>
 
     <!-- Customer Work Plan -->
     <string name="wp_customer" > Customer </string>
-    <string name="wp_jde_code" > JDE Code </string>
+    <string name="wp_jde_code" ># Service Order</string>
     <string name="wp_address"  > Address  </string>
     <string name="wp_email"    > E-mail </string>
     <string name="wp_telephone"> Telephone </string>
@@ -318,15 +318,15 @@
 
 
     <!-- Partial Liquidation / Liquidación Parcial -->
-    <string name="movement_number">Movement Number:</string>
+    <string name="movement_number">Card Number:</string>
     <string name="quantity">Quantity:</string>
-    <string name="evidence">Evidence</string>
+    <string name="evidence">Signature</string>
     <string name="send">Send</string>
 
     <!-- Partial Liquidation Dialog/ DIálogo Liquidación Parcial -->
     <string name="retry">Retry</string>
     <string name="cancel2">Cancel</string>
-    <string name="text_camera">Add Photo</string>
+    <string name="text_camera">Add Signature</string>
 
     <!-- RequestManager strings -->
     <string name="req_man_error_contacting_service">Error Contacting Service</string>
@@ -697,7 +697,7 @@
     <string name="sts_printer_saved">Printer saved: </string>
 
     <!-- Fragment NO REASON FOR SALE -->
-    <string name="no_reason_for_sale">No reason for sale</string>
+    <string name="no_reason_for_sale">Order Cncellation Reason</string>
     <string name="reason">Motivo</string>
     <string name="checkout">Checkout</string>
 
@@ -705,8 +705,8 @@
     <string name="print_visit_ticket">Print Visit Ticket</string>
 
     <!-- FragmentAuthorizeVisit -->
-    <string name="coment_authorize_visit">Coment</string>
-    <string name="write_a_coment">Write a coment</string>
+    <string name="coment_authorize_visit">Additional Observations</string>
+    <string name="write_a_coment">Write a Observation</string>
     <string name="missing_signature">Missing Signature</string>
 
 

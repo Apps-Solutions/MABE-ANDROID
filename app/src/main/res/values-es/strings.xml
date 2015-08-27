@@ -51,7 +51,7 @@
     <string name="product_tax_indicator">Impuesto</string>
     <string name="product_tax_indicator_with_symbol">Impuesto (%)</string>
     <string name="product_stock_central_indicator">Stock\ncentral</string>
-    <string name="product_search_hint">Buscar Producto&#8230;</string>
+    <string name="product_search_hint">Buscar Refecciones&#8230;</string>
     <string name="product_photos_hint">Fotos</string>
     <string name="select_category">Selecciona Una Categoría</string>
     <string name="select">Selecciona</string>
@@ -153,14 +153,14 @@
 
     <string-array name="drawer_titles">
         <item>Inicio</item>
-        <item>Plan de Trabajo</item>
+        <item>Plan de Servicio</item>
         <item>Sincronizar aplicación</item>
-        <item>Depósitos</item>
+        <item>Pagos</item>
         <item>Formularios</item>
         <item>Visitas</item>
-        <item>Pedidos</item>
+        <item>Refacciones</item>
         <item>Inventario</item>
-        <item>Agregar Cliente Prospecto</item>
+        <item>Agregar Datos del Cliente</item>
         <item>Localización</item>
         <item>Productos</item>
         <item>Encuestas</item>
@@ -226,22 +226,22 @@
     <!-- Steps Visit / Pasos de la Visita -->
     <string name="preparation">Preparación de la Visita</string>
     <string name="capturing_inventories">Captura de Inventarios</string>
-    <string name="order">Pedido</string>
-    <string name="payment_record">Cobranza</string>
+    <string name="order">Orden de Servicio</string>
+    <string name="payment_record">Pagos</string>
     <string name="order_cancellation">Cancelación</string>
-    <string name="refund">Cambio Físico</string>
-    <string name="refund_cancellation">Cancelación Cambio Físico</string>
+    <string name="refund">Cambio de Pieza</string>
+    <string name="refund_cancellation">Cancelación Cambio de Pieza</string>
     <string name="return_order">Devolución</string>
     <string name="not_sale">No Venta</string>
-    <string name="authorize_visit">Autorizar Salida</string>
-    <string name="end_visit">Finalizar Visita</string>
+    <string name="authorize_visit">Autorizar Final de Servicio</string>
+    <string name="end_visit">Cierre de la Orden</string>
     <string name="pre_orders">Pedidos en Preventa</string>
     <string name="historic_orders">Histórico Pedidos</string>
     <string name="extra_tasks">Tareas Genéricas</string>
 
     <!-- Customer Work Plan -->
     <string name="wp_customer" > Cliente </string>
-    <string name="wp_jde_code" > Código JDE </string>
+    <string name="wp_jde_code" ># Orden Servicio</string>
     <string name="wp_address"  > Direccion  </string>
     <string name="wp_email"    > E-mail </string>
     <string name="wp_telephone"> Telefono </string>
@@ -298,7 +298,7 @@
     <string name="cashing_total"> Total:</string>
 
     <!-- order -->
-    <string name="order_unit">Total pzas:</string>
+    <string name="order_unit">Total Refacc:</string>
     <string name="order_subtotal">Subtotal:</string>
     <string name="order_total">Total:</string>
 
@@ -306,15 +306,15 @@
     <string name="receipt_invoice">Pago de Factura</string>
 
     <!-- Partial Liquidation / Liquidacion Parcial -->
-    <string name="movement_number">Numero de Movimiento</string>
+    <string name="movement_number">Número de Tarjeta</string>
     <string name="quantity">Cantidad</string>
-    <string name="evidence">Evidencia</string>
+    <string name="evidence">Firma</string>
     <string name="send">Enviar</string>
 
     <!-- Partial Liquidation Dialog/ Liquidacion Parcial Dialog -->
     <string name="retry">Reintentar</string>
     <string name="cancel2">Cancelar</string>
-    <string name="text_camera">Agregar Foto</string>
+    <string name="text_camera">Agregar Firma</string>
 
     <!-- RequestManager strings -->
     <string name="req_man_error_contacting_service">Error Contactando el Servicio</string>
@@ -358,8 +358,8 @@
 
     <string name="req_man_confirm_cancel_order">¿Estás seguro de cancelar el pedido?</string>
     <string name="req_man_error_cancel_order">No existe información de pedido a cancelar</string>
-    <string name="req_man_error_preorder_available">Pedido de preventa registrado. No es posible levantar nuevo pedido</string>
-    <string name="req_man_error_order_already_sent">Ya se ha enviado un pedido, imposible levantar uno nuevo</string>
+    <string name="req_man_error_preorder_available">Orden de preventa registrado. No es posible levantar nueva orden</string>
+    <string name="req_man_error_order_already_sent">Ya se ha enviado una orden, imposible levantar una nueva</string>
     <string name="req_man_error_preorder_order_already_sent">Pedido enviado. Módulo de preventa deshabilitado</string>
     <string name="req_man_error_no_preorder">El cliente no cuenta con ordenes de preventa</string>
 
@@ -694,7 +694,7 @@
     <string name="sts_printer_saved">Impresora Guardada: </string>
 
     <!-- Fragment NO REASON FOR SALE -->
-    <string name="no_reason_for_sale">Motivo de No Venta</string>
+    <string name="no_reason_for_sale">Motivo de Cancelación Orden</string>
     <string name="reason">Reason</string>
     <string name="checkout">Registro de salida</string>
 
@@ -702,8 +702,8 @@
     <string name="print_visit_ticket">Imprimir Ticket Visita</string>
 
     <!-- FragmentAuthorizeVisit -->
-    <string name="coment_authorize_visit">Comentario</string>
-    <string name="write_a_coment">Escribir un comentario</string>
+    <string name="coment_authorize_visit">Observaciones Adicionales</string>
+    <string name="write_a_coment">Escribir una Observación</string>
     <string name="missing_signature">Falta Firma</string>
 
 
@@ -751,5 +751,25 @@
             <string name="spn_kind_exhibition_island">Isla</string>
             <string name="spn_kind_exhibition_head">Cabecera</string>
             <string name="spn_kind_exhibition_earring_or_nuisance">Arete o Estorbo</string>
+    
+    <string name="falla_electrica">Falla Electrica</string>
+    <string name="falla_enfriamiento">Falla sistema de enfriamiento</string>
+    <string name="falla_compresor">Falla en el compresor</string>
+    <string name="falla_lavado">No hace ciclo de lavado</string>
+    <string name="falla_motor">No descansa motor</string>
+    <string name="falla_x">Falla X</string>
+    <string name="falla_y">Falla Y</string>
+    <string name="falla_z">Falla Z</string>
 
+
+    <string name="garatia">Garantia</string>
+    <string name="contrato">Contrato</string>
+    <string name="cargo">Cargo</string>
+    <string name="milenia">Milenia</string>
+
+    <string name="reagendado1">Reagendado</string>
+    <string name="proceso">En proceso</string>
+    <string name="terminado">Terminado</string>
+    <string name="no_localizado">No localizado</string>
+    
 </resources>

@@ -18,7 +18,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -32,10 +31,8 @@ import database.DataBaseManager;
 import database.models.CheckOut;
 import database.models.CustomerWorkPlan;
 import database.models.ExtraTasks;
-import database.models.MarketingQuest;
 import database.models.NoSaleReasonRecord;
 import database.models.OrderSent;
-import database.models.Product;
 import database.models.Session;
 import database.models.Signature;
 import database.models.User;
@@ -43,7 +40,6 @@ import database.models.UserInfo;
 import database.models.Warehouse;
 import database.models.WholeSalesPrices;
 import location.GPSTracker;
-import util.Constants;
 import util.DatesHelper;
 import util.StepVisitAdapter;
 import util.TicketGenerator;
@@ -311,6 +307,13 @@ public class FragmentStepVisit extends Fragment implements AdapterView.OnItemCli
 
                 case 2:
 
+                    fragment = new FragmentOrderMabe();
+                    Bundle bundle   = new Bundle();
+                    bundle.putString("lock", locked_type.toString());
+                    fragment.setArguments(bundle);
+                    fragmentTransaction.replace(R.id.container, fragment, FragmentOrderMabe.TAG);
+                    ((MainActivity) getActivity()).depthCounter = 4;
+                    /*
                     if (DataBaseManager.sharedInstance().getNotPaidInvoicesFromPDV(TrackerManager.sharedInstance().getCurrent_pdv().get("pdv_id")) != null){
                         Toast.makeText(getActivity(),getActivity().getString(R.string.req_man_error_order_pending_invoices),Toast.LENGTH_SHORT).show();
                         return;
@@ -332,7 +335,7 @@ public class FragmentStepVisit extends Fragment implements AdapterView.OnItemCli
                     fragment.setArguments(bundle);
                     fragmentTransaction.replace(R.id.container, fragment, FragmentOrders.TAG);
                     ((MainActivity) getActivity()).depthCounter = 4;
-
+                    */
                     break;
                 case 3:
                     Log.e(TAG,"CANCEL ORDERS");

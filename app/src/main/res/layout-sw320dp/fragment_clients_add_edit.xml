@@ -53,6 +53,15 @@
             </LinearLayout>
 
             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID del Cliente"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                style="@style/EditTextCustomHolo"
+                android:inputType="textCapCharacters"/>
+
+            <EditText
                 android:id="@+id/edt_client_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,6 +95,42 @@
                 android:singleLine="true"/>
 
             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Modelo del producto"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                style="@style/EditTextCustomHolo"
+                android:inputType="textCapCharacters"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de serie del producto"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                style="@style/EditTextCustomHolo"
+                android:inputType="textCapCharacters"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Fecha de compra del producto"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black_gray"
+                android:textSize="@dimen/sizeMediumText"/>
+
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/datePicker2"
+                android:calendarViewShown="false"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
                 android:id="@+id/edt_client_rfc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -93,6 +138,7 @@
                 android:textColorHint="@color/light_gray"
                 android:textColor="@color/black_gray"
                 android:inputType="textCapCharacters"
+                android:layout_marginTop="10dp"
                 android:singleLine="true"
                 style="@style/EditTextCustomHolo"
                 android:nextFocusDown="@+id/edt_client_curp"/>
